@@ -151,8 +151,6 @@ function mostrarCarrito() {
     const div = document.createElement("div");
     div.className = "card-producto mb-2";
 
-    const paises = item.paisesPreferencia.join(", ");
-
     div.innerHTML = `
       <div class="card p-2">
       <div class="row">
@@ -238,13 +236,22 @@ inputBusqueda.addEventListener("keypress", (e) => {
 });
 
 //inputBusqueda.addEventListener("input", buscarProductos); // búsqueda en tiempo real ME VOLVIA LOCA ESTO ja
-
-
+// preguntar si esto se podria aplicar todo junto
 contenedorResultados.addEventListener("click", e => {
   if (e.target.tagName === "BUTTON" && e.target.dataset.id) {
     agregarAlCarrito(e.target.dataset.id);
   }
 });
+
+// productos destacados para agregar al carrito
+document.getElementById("productos-destacados").addEventListener("click", e => {
+  const boton = e.target.closest("button");
+  if (boton?.dataset?.id) {
+    agregarAlCarrito(boton.dataset.id);
+  }
+});
+
+
 
 contenedorCarrito.addEventListener("click", e => {
   if (e.target.tagName === "BUTTON" && e.target.dataset.id) {
