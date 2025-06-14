@@ -7,6 +7,14 @@
   color: rgb(219, 53, 69);
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-color-danger {
+  color: rgb(219, 53, 69);
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: #2F2F2F;
@@ -27,14 +35,6 @@ body {
   color: #FFFFFF;
 }
 
-.text-right {
-  text-align: right;
-}
-
-.text-color-danger {
-  color: rgb(219, 53, 69);
-}
-
 .wrapper-buscador {
   position: relative;
 }
@@ -42,7 +42,7 @@ body {
   content: " ";
   width: 200px;
   height: 100%;
-  background-image: url("/img/general/hero-left.png");
+  background-image: url("../img/general/hero-left.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -55,7 +55,7 @@ body {
   content: " ";
   width: 300px;
   height: 100%;
-  background-image: url("/img/general/hero-right.png");
+  background-image: url("../img/general/hero-right.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;

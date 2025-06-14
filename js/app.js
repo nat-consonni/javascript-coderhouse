@@ -33,7 +33,7 @@ function obtenerProductosDestacados() {
 
 // Variables globales y elementos del DOM
 let productos = obtenerProductosDisponibles();
-let carrito = JSON.parse(localStorage.getItem("carrito")) || []; // podríamos agregar un modal para confirmar si se quiere guardar antes de salir
+let carrito = JSON.parse(localStorage.getItem("carrito")) || []; // idea: agregar un modal para confirmar si se quiere guardar antes de salir
 
 const inputBusqueda = document.getElementById("busqueda");
 const btnBuscar = document.getElementById("btn-buscar");
@@ -45,7 +45,6 @@ const btnVaciar = document.getElementById("btn-vaciar");
 //
 // Muestra los productos destacados en su sección
 //no quede muy conforme en como hice el card.innerHTML... creo se podría optimizar
-// estaria bueno despues agregar la cantidad, y que el icono de carrito cambiara a eliminar o algo asi
 function mostrarProductosDestacados(productos) {
   const contenedorDestacados = document.getElementById("productos-destacados");
   contenedorDestacados.innerHTML = "";
@@ -136,19 +135,21 @@ function mostrarProductos(productos) {
 
 //
 // Muestra los productos que están en el carrito
+// estaria bueno despues agregar la cantidad, y que el icono de carrito cambiara a eliminar o algo asi
 function mostrarCarrito() {
   contenedorCarrito.innerHTML = "";
 
+  const btnVaciar = document.getElementById("btn-vaciar");
+
   if (carrito.length === 0) {
     contenedorCarrito.innerHTML = "<p>El carrito está vacío.</p>";
+    btnVaciar.classList.add("d-none"); // ocultar el botón
     return;
   }
 
   carrito.forEach(item => {
     const div = document.createElement("div");
     div.className = "card-producto mb-2";
-
-    const paises = item.paisesPreferencia.join(", ");
 
     div.innerHTML = `
       <div class="card p-2">
@@ -171,13 +172,13 @@ function mostrarCarrito() {
 
     contenedorCarrito.appendChild(div);
   });
-
+  btnVaciar.classList.remove("d-none"); // mostrar el botón si hay elementos
 }
 
 
 
 //
-// Filtra productos según la búsqueda del usuario
+// Muestra los productos según la búsqueda del usuario
 function buscarProductos() {
   const query = inputBusqueda.value.trim().toLowerCase();
 
@@ -189,6 +190,7 @@ function buscarProductos() {
   const resultados = productos.filter(p =>
     p.nombre.toLowerCase().includes(query) ||
     p.marca.toLowerCase().includes(query) ||
+    p.tienda.toLowerCase().includes(query) ||
     p.paisesPreferencia.some(pais => pais.toLowerCase().includes(query))
   );
 
@@ -234,13 +236,22 @@ inputBusqueda.addEventListener("keypress", (e) => {
 });
 
 //inputBusqueda.addEventListener("input", buscarProductos); // búsqueda en tiempo real ME VOLVIA LOCA ESTO ja
-
-
+// preguntar si esto se podria aplicar todo junto
 contenedorResultados.addEventListener("click", e => {
   if (e.target.tagName === "BUTTON" && e.target.dataset.id) {
     agregarAlCarrito(e.target.dataset.id);
   }
 });
+
+// productos destacados para agregar al carrito
+document.getElementById("productos-destacados").addEventListener("click", e => {
+  const boton = e.target.closest("button");
+  if (boton?.dataset?.id) {
+    agregarAlCarrito(boton.dataset.id);
+  }
+});
+
+
 
 contenedorCarrito.addEventListener("click", e => {
   if (e.target.tagName === "BUTTON" && e.target.dataset.id) {
@@ -273,7 +284,7 @@ inputBusqueda.addEventListener("input", () => {
   }
 });
 
-// Evento click en el botón (buscar o limpiar)
+// Evento click en el botón para buscar o limpiar
 btnBuscar.addEventListener("click", () => {
   const valor = inputBusqueda.value.trim();
   if (valor === "") return;
@@ -317,6 +328,6 @@ document.addEventListener("click", (e) => {
 
 
 //
-// Inicialización al cargar la página
+// inicia al cargar la página
 mostrarCarrito(); // muestra lo que ya había en el carrito
 mostrarProductosDestacados(obtenerProductosDestacados()); // muestra los productos destacados al principio
