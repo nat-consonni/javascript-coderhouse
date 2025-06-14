@@ -1,0 +1,22 @@
+// Base
+@use "base";
+
+//Atoms
+@use "buttons";
+
+//Moleculas
+@use "buscador-principal";
+@use "card-productos";
+
+//Organismos
+@use "navigation";
+@use "footer";
+@use "carrito";
+
+//Layout
+
+
+
+//icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+

@@ -1,0 +1,21 @@
+{
+  "name": "coder-javascript-pre-entrega-2",
+  "version": "1.0.0",
+  "description": "## Introducción",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
+    "compile-sass": "^2.0.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "sass": "^1.89.1"
+  }
+}

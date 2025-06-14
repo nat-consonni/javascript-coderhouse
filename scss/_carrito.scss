@@ -1,0 +1,32 @@
+@import "variables";
+@import "utilities";
+
+.btn-carrito-flotante {
+  position: fixed !important;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrito-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 350px;
+  max-height: 600px;
+  background-color: $color-white;
+  z-index: 1001;
+  .precio{
+    font-size: 1rem;
+  }
+}
+
+.carrito-contenido{
+    overflow-y: auto;
+    border-bottom: 1px solid $color-text-light;
+}

@@ -1,0 +1,20 @@
+//
+//Colors
+
+$color-accent: #FF8000;
+$color-accent-dark: darken($color-accent, 10%);
+$color-accent-highlighted: rgba($color-accent, 0.6);
+
+$color-primary: #13224D;
+
+$color-text: #2F2F2F; 
+$color-text-light: lighten($color: $color-text, $amount: 40);
+
+$color-white: #FFFFFF;
+
+//
+
+//
+// Fonts
+$font-brand: "Sour Gummy", sans-serif;
+//

@@ -1,0 +1,14 @@
+@import "variables";
+
+.btn-primary{
+    background-color: $color-accent;
+    border-color: $color-accent;
+    color: $color-white;
+    border-radius: 100px;
+    font-weight: 500;
+    &:hover{
+        background-color: $color-accent-dark;
+        border-color: $color-accent-dark;
+        color: $color-white;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dónde lo consigo - Tienda de productos internacionales en Uruguay</title>
+  <meta name="description" content="Descubrí Dónde lo consigo, una tienda que conecta a Uruguay con productos internacionales. Comprá alimentos y bebidas únicas de distintas culturas.">
+  <meta name="keywords" content="Dónde lo consigo, tienda internacional, alimentos importados, supermercado cultural, uruguay, productos del mundo, ecommerce">
+
+  <!-- SEO -->
+  <meta property="og:title" content="Dónde lo consigo" />
+  <meta property="og:description" content="Tienda de productos internacionales en Uruguay" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_UY" />
+
+  <!-- Estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body class="d-flex flex-column min-vh-100 home-page">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white py-2 sticky-top" role="navigation" aria-label="Main navigation">
+    <div class="container justify-content-between mobile-nav">
+      <a class="navbar-brand" href="/" title="Dónde lo consigo - Uruguay"><span class="highlighted">Dónde</span> lo consigo<span class="brand-location">Uruguay</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end mt-4" id="navbarSupportedContent">
+        <ul class="navbar-nav" role="menubar">
+          <li class="nav-item" role="none"><a title="Inicio" role="menuitem" aria-current="page" class="nav-link active" href="index.html">Consigue tu sabor</a></li>
+          <li class="nav-item" role="none"><a title="Listado de todos los productos publicados." role="menuitem" class="nav-link" href="404.html">Todos los productos</a></li>
+          <li class="nav-item" role="none"><a title="Conoce más sobre nosotros." role="menuitem" class="nav-link" href="404.html">Nosotros</a></li>
+          <li class="nav-item" role="none"><a title="Contacta con nosotros para publicar tus products" role="menuitem" class="nav-link btn btn-primary btn-sm" href="404.html">Quiero publicar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion principal -->
+  <main>
+
+    <div class="wrapper-buscador py-5">
+      <div class="container">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-8 offset-xl-4 offset-lg-4 offset-md-3 offset-sm-2 offset-xs-2">
+          <label for="busqueda" class="h2 d-block text-center my-4">¿Qué quieres conseguir?</label>
+          <div class="wrapper-form-buscador">
+            <input type="text" id="busqueda" placeholder="Ej: leche de coco, Brasil, YogiTea..." class="form-control d-block w-100"/>
+             <button id="btn-buscar" class="btn-buscador" type="button">
+              <span class="d-none">Conseguir</span>
+              <i id="icono-busqueda" class="bi bi-search-heart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- contenido bajo el hero-->
+    <div class="container py-4">
+
+      <!-- resultado de busqueda -->
+      <section aria-label="Resultados de búsqueda" class="resultado-busqueda mb-5 d-none" id="resultados-busqueda-wrapper">
+        <h4 class="text-center font-brand">Resultados</h4>
+        <p id="sin-resultados" class="text-center d-none">No se encontraron productos.</p>
+        <div id="resultados"  class="row justify-content-left my-4">
+
+        </div>
+          
+      </section><!-- resultado de busqueda -->
+
+      <!-- productos destacados -->
+      <section aria-label="Productos destacados" class="productos-destacados">
+        <h4 class="text-center font-brand">Productos destacados</h4>
+        <div id="productos-destacados" class="d-flex justify-content-center my-4">
+
+        </div>
+      </section><!-- productos destacados -->
+
+      
+      
+      <!-- Carrito -->
+     <!-- <section aria-label="Carrito de compras" class="mt-10">
+        <h3 class="">Carrito de Compras</h3>
+          <div id="carrito" class="space-y-2"></div>
+          <div class="mt-4">
+            <button id="btn-vaciar" class="btn btn-primary">Vaciar Carrito</button>
+          </div>
+      </section> -->
+
+      <!-- Botón flotante del carrito -->
+      <button id="btn-carrito-flotante" class="btn btn-primary rounded-circle shadow-lg position-relative btn-carrito-flotante" title="Ver carrito">
+        <i class="bi bi-cart-fill fs-4"></i>
+        <span id="badge-carrito" class="d-none">
+          <span class="visually-hidden">Productos en el carrito</span>
+        </span>
+      </button>
+
+      <!-- Burbuja del carrito -->
+      <div id="burbuja-carrito" class="carrito-popup card shadow p-3 d-none">
+        <h5 class="mb-3">Carrito de compras</h5>
+        <div id="carrito" class="mb-3 carrito-contenido"></div>
+        <button id="btn-vaciar" class="btn btn-danger btn-sm">Vaciar Carrito</button>
+      </div>
+
+
+
+      
+    </div><!-- cierro container-->
+
+    
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-2 w-100">
+    <div class="container">
+      <p><small>Dónde lo consigo © 2025 – Proyecto académico</small></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
