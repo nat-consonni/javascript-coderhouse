@@ -177,7 +177,7 @@ function mostrarCarrito() {
 
 
 //
-// Filtra productos según la búsqueda del usuario
+// Muestra los productos según la búsqueda del usuario
 function buscarProductos() {
   const query = inputBusqueda.value.trim().toLowerCase();
 
@@ -189,6 +189,7 @@ function buscarProductos() {
   const resultados = productos.filter(p =>
     p.nombre.toLowerCase().includes(query) ||
     p.marca.toLowerCase().includes(query) ||
+    p.tienda.toLowerCase().includes(query) ||
     p.paisesPreferencia.some(pais => pais.toLowerCase().includes(query))
   );
 
