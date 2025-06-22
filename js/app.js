@@ -1,5 +1,5 @@
 //
-// 🔧 Funciones para obtener datos
+// Funciones para obtener los datos
 //
 
 function obtenerProductosDisponibles() {
@@ -20,7 +20,7 @@ function obtenerProductosDestacados() {
 
 
 //
-// 🎨 Funciones para mostrar en pantalla
+// Funciones para mostrar en pantalla
 //
 
 function mostrarProductosDestacados(productos) {
@@ -139,7 +139,7 @@ function mostrarCarrito() {
 
 
 //
-// 🧠 Lógica
+// Lógica de la app
 //
 
 function buscarProductos() {
@@ -186,7 +186,7 @@ function vaciarCarrito() {
 
 
 //
-// 📌 Variables globales y elementos
+// Variables globales y elementos
 //
 
 let productos = obtenerProductosDisponibles();
@@ -207,7 +207,7 @@ const burbujaCarrito = document.getElementById("burbuja-carrito");
 
 
 //
-// 📌 Eventos
+// Eventos
 //
 
 // Búsqueda por botón o Enter
@@ -291,7 +291,7 @@ document.addEventListener("click", (e) => {
 
 
 //
-// 🚀 Inicio
+// Inicio de la app
 //
 
 mostrarCarrito();
