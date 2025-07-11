@@ -8,6 +8,7 @@ const tiendas = [
     { 
       id: "tienda-sdm",
       nombre: "Sabores del Mundo",
+      tiempoPreparacion: "8",
       productos: [
         { id: "SDM-001", nombre: "Leche de Coco", marca: "ThaiPure", paisesPreferencia: ["Tailandia", "Brasil"], disponible: true, cantidad: 10, precio: 150 },
         { id: "SDM-002", nombre: "Té Chai", marca: "YogiTea", paisesPreferencia: ["India", "Alemania"], disponible: true, cantidad: 25, precio: 290 },
@@ -24,6 +25,7 @@ const tiendas = [
     {
       id: "tienda-erm",
       nombre: "El Rincón del Migrante",
+      tiempoPreparacion: "7",
       productos: [
         { id: "ERM-001", nombre: "Harina de Mandioca", marca: "Natural Brasil", paisesPreferencia: ["Brasil", "Paraguay"], disponible: true, cantidad: 8, precio: 120 },
         { id: "ERM-002", nombre: "Leche de Coco", marca: "CocoLoco", paisesPreferencia: ["Brasil"], disponible: false, cantidad: 0, precio: 130 },
@@ -40,6 +42,7 @@ const tiendas = [
     {
       id: "tienda-cys",
       nombre: "Cultura y Sabor",
+      tiempoPreparacion: "11",
       productos: [
         { id: "CYS-001", nombre: "Té Chai", marca: "Organic India", paisesPreferencia: ["India"], disponible: true, cantidad: 5, precio: 310 },
         { id: "CYS-002", nombre: "Yerba con Jengibre", marca: "Del Mate", paisesPreferencia: ["Uruguay", "Argentina"], disponible: true, cantidad: 12, precio: 180 },
@@ -54,4 +57,3 @@ const tiendas = [
       ]
     }
   ];
-  

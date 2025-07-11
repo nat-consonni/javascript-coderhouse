@@ -12,11 +12,36 @@ $color-text-light: lighten($color: $color-text, $amount: 40);
 
 $color-white: #FFFFFF;
 
-//
+// User feedback
+$color-danger: #A10702;
+$color-success: #688E26;
+$color-info: #3F88C5;
+$color-warning: #F7FE72;
+
+// Support colors
+$color-support-1: #f6edff;
+$color-support-2: #dbf4ff;
+$color-support-3: #EBFEF4;
+$color-support-4: #DAFBE8;
+$color-support-5: #feecf5;
+$color-support-6: #ebffd5;
+$color-support-7: #F2F8F5;
+$color-support-8: #EDEAD0;
+$color-support-9: #fff2e6;
+$color-support-10: #EBFCFF;
+$color-support-11: #dff1f9;
+$color-support-12: #EBFEF4;
+$color-support-13: #DAFBE8;
+$color-support-14: #EFFAF7;
+$color-support-15: #d5fffe;
+$color-support-16: #F2F8F5;
+$color-support-17: #ffe2e2;
+$color-support-18: #ffebeb;
+
 
 //
 // Fonts
 $font-brand: "Sour Gummy", sans-serif;
 //
 
-$border-radius-default: 100px;
+$border-radius-default: 0.2rem;

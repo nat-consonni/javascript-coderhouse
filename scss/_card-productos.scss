@@ -1,41 +1,82 @@
 @import "variables";
 @import "utilities";
 
-.card-producto{
-    h4, p{
-        margin-bottom: 0;
+
+//
+// Card region
+//
+.card-region{
+    .img-wrapper{
+        overflow: hidden;
+        height: 6rem;
+        img{
+            //height: auto;
+            max-height: 100%;
+            max-width: 100%;
+        }
     }
-    p{
-        font-size: 0.9rem;
+    .small{
+        color: $color-text-light;
+    }
+}
+
+
+//
+// Card producto
+//
+.card-producto{
+    .region{
+        font-size: 0.78rem;
+        color: $color-text-light;
+        margin-bottom: 0.4rem;
+    }
+    .detalles-venta{
+        p{
+            font-size: 0.78rem;
+            color: $color-text-light;
+        }
+    }
+    .nombre-tienda{
+        font-size: 0.78rem;
     }
     small{
-        font-size: 0.9rem;
-        font-weight: 400;
-    }
+        font-size: 0.78rem;
+    } //optimizar
     .tienda{
         color: $color-text-light;
         margin-bottom: 0.2rem;
     }
-    h5{
+    .price{
+        color: $color-primary;
+        font-weight: 600;
         font-size: 1.2rem;
+        span{
+            font-size: 0.7rem;
+            line-height: 1.9rem;
+            display: inline-block;
+            padding-left: 0.2rem;
+        }
     }
-    .footer{
-        padding-top: 1rem;
-        button{
-            border-color: $color-accent;
-            color: $color-accent;
-            &:hover{
-                background-color: $color-accent-highlighted;
-                color: $color-accent-dark;
+    .btn-primary{
+        font-weight: 600;
+        font-size: 0.78rem;
+        padding: 0.05rem 0.5rem;
+    }
+
+    .cantidad-group{
+        .btn{
+            border-radius: 1000px;
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0;
+            &:hover i{
+                color: $color-white;
+            }
+            i{
+                font-size: 0.78rem;
+                color: $color-danger;
             }
         }
     }
-    .precio{
-        font-size: 1.4rem;
-        font-weight: bold;
-        color: $color-primary;
-        span{
-            display: none;
-        }
-    }
+
 }

@@ -1,0 +1,28 @@
+@import "variables";
+@import "utilities";
+
+.label{
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.banner{
+    h5{
+        font-weight: 600;
+    }
+}
+
+.banner-bg-1{
+    background-color: $color-support-10;
+    .label{
+        background-color: darken($color: $color-support-10, $amount: 20);
+    }
+}
+
+.banner-bg-2{
+    background-color: $color-support-7;
+        .label{
+        background-color: darken($color: $color-support-7, $amount: 20);
+    }
+}

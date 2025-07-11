@@ -4,11 +4,32 @@
     background-color: $color-accent;
     border-color: $color-accent;
     color: $color-white;
-    border-radius: 100px;
-    font-weight: 500;
     &:hover{
         background-color: $color-accent-dark;
         border-color: $color-accent-dark;
         color: $color-white;
+    }
+}
+
+.btn-outline-secondary{
+    border-color: $color-primary;
+    color: $color-primary;
+    &:hover{
+        background-color: $color-primary;
+    }
+}
+
+.btn-group{
+    .btn{
+       color: $color-accent;
+       border-color: $color-accent;
+        &.active{
+            background: $color-accent;
+            color: $color-white;
+        }
+        &:hover:not(.active){
+            background: $color-accent-highlighted;
+            color: $color-accent-dark;
+        }
     }
 }

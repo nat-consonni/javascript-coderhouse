@@ -1,40 +1,15 @@
 @import "variables";
 
-.wrapper-buscador{
-    position: relative;
-    &:before{
-        content: " ";
-        width: 200px;
-        height: 100%;
-        background-image: url("../img/general/hero-left.png");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-        position: absolute;
-        left: 2rem;
-        top: 0px;
-        z-index: -1;
-    }
-    &:after{
-        content: " ";
-        width: 300px;
-        height: 100%;
-        background-image: url("../img/general/hero-right.png");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-        position: absolute;
-        right: 2rem;
-        bottom: 0px;
-        z-index: -1;
-    }
-    
-}
 
 .wrapper-form-buscador{
-    position: relative;
+    position: relative; 
+    overflow: hidden;
+    width: 30%;
     .form-control{
-        border-color: $color-primary;
+        border: none;
+        background: rgba($color-primary, 0.1);
+        padding: 0.6rem 1rem;
+        border-radius: 0.2rem;
         &:focus{
             box-shadow: 0 0 0.5rem 0.1rem $color-accent-highlighted;
             border-color: $color-accent-highlighted;
@@ -45,9 +20,10 @@
         right: 0;
         top: 0;
         height: 100%;
-        width: 2rem;
-        border: none;
-        background: none;
-        color: $color-accent;
+        border-radius: 0 0.2rem 0.2rem 0;
+        border: 0px transparent;
+        background: $color-accent;
+        color: $color-white;
+        padding: 0 0.8rem;
     }
 }
