@@ -227,10 +227,16 @@ a:hover {
   color: #959595;
 }
 
+.card-producto .img-wrapper {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
 .card-producto .region {
   font-size: 0.78rem;
   color: #959595;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
 }
 .card-producto .detalles-venta p {
   font-size: 0.78rem;
@@ -246,6 +252,12 @@ a:hover {
   color: #959595;
   margin-bottom: 0.2rem;
 }
+.card-producto .h6 {
+  min-height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.25rem;
+}
 .card-producto .price {
   color: #13224D;
   font-weight: 600;
@@ -256,6 +268,13 @@ a:hover {
   line-height: 1.9rem;
   display: inline-block;
   padding-left: 0.2rem;
+}
+.card-producto .footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 .card-producto .btn-primary {
   font-weight: 600;

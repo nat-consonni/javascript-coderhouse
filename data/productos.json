@@ -1,0 +1,4365 @@
+{
+  "tiendas": [
+    {
+      "id": "la-latina-market",
+      "nombre": "La Latina Market",
+      "tiempo_preparacion": 17,
+      "regiones": [
+        "Argentina",
+        "Bolivia",
+        "Brasil",
+        "Chile",
+        "Colombia",
+        "Costa Rica",
+        "Cuba",
+        "Ecuador",
+        "El Salvador",
+        "Guatemala",
+        "Honduras",
+        "México",
+        "Nicaragua",
+        "Panamá",
+        "Paraguay",
+        "Perú",
+        "República Dominicana",
+        "Venezuela",
+        "Latinoamericana",
+        "Centroamérica",
+        "Caribe"
+      ],
+      "productos": [
+        {
+          "id": "c858c338-9347-4cc3-a218-19aaf9557251",
+          "nombre": "Galletas dulces",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "Centro America",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 46,
+          "precio": 721.77,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c858c338-9347-4cc3-a218-19aaf9557251/300/300"
+        },
+        {
+          "id": "abbf94ec-0e8c-4d5d-8c7b-fe3d9758ad2b",
+          "nombre": "Vinagre blanco",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 91,
+          "precio": 574.62,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/abbf94ec-0e8c-4d5d-8c7b-fe3d9758ad2b/300/300"
+        },
+        {
+          "id": "b613beed-2f05-4057-af85-fe5100b2c51c",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 86,
+          "precio": 192.13,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b613beed-2f05-4057-af85-fe5100b2c51c/300/300"
+        },
+        {
+          "id": "db17ff85-08da-47e7-961a-326a57d1d48c",
+          "nombre": "Fideos largos",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 35,
+          "precio": 515.12,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/db17ff85-08da-47e7-961a-326a57d1d48c/300/300"
+        },
+        {
+          "id": "2c7debe4-f3d0-47d4-a4b4-ba3f9836cebd",
+          "nombre": "Gaseosa cola",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 25,
+          "precio": 604,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2c7debe4-f3d0-47d4-a4b4-ba3f9836cebd/300/300"
+        },
+        {
+          "id": "1dac62fd-594f-45b5-869c-453268fb973c",
+          "nombre": "Conserva de duraznos",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 60,
+          "precio": 249.54,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/1dac62fd-594f-45b5-869c-453268fb973c/300/300"
+        },
+        {
+          "id": "d3333dbe-8cb8-4818-9d1d-c45ddf6546d9",
+          "nombre": "Frijoles negros",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 90,
+          "precio": 192.04,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d3333dbe-8cb8-4818-9d1d-c45ddf6546d9/300/300"
+        },
+        {
+          "id": "849cd17d-119c-4464-ba00-b54235307cde",
+          "nombre": "Manteca",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 17,
+          "precio": 499.07,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/849cd17d-119c-4464-ba00-b54235307cde/300/300"
+        },
+        {
+          "id": "868c2b5c-034f-4e50-9315-0ca68258dd9f",
+          "nombre": "Leche en polvo",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 31,
+          "precio": 169.01,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/868c2b5c-034f-4e50-9315-0ca68258dd9f/300/300"
+        },
+        {
+          "id": "599dd87d-e9a6-415d-a43f-978299a566a8",
+          "nombre": "Gaseosa cola",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 39,
+          "precio": 557.01,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/599dd87d-e9a6-415d-a43f-978299a566a8/300/300"
+        },
+        {
+          "id": "96632e67-3c00-4fce-9bf8-51d0d87feffa",
+          "nombre": "Queso rallado",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 15,
+          "precio": 234.67,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/96632e67-3c00-4fce-9bf8-51d0d87feffa/300/300"
+        },
+        {
+          "id": "e3c4916f-cd5b-4f5c-88a7-a3b7c93f84d6",
+          "nombre": "Leche en polvo",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 4,
+          "precio": 194.23,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e3c4916f-cd5b-4f5c-88a7-a3b7c93f84d6/300/300"
+        },
+        {
+          "id": "d9b10f44-2beb-4dd2-bcc2-0a1dd2654f8e",
+          "nombre": "Cereal de avena",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 51,
+          "precio": 710.98,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d9b10f44-2beb-4dd2-bcc2-0a1dd2654f8e/300/300"
+        },
+        {
+          "id": "45b75eda-9395-4fd4-8718-337862438e6b",
+          "nombre": "Leche en polvo",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 22,
+          "precio": 325.07,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/45b75eda-9395-4fd4-8718-337862438e6b/300/300"
+        },
+        {
+          "id": "f21816bb-9677-42fe-bd8f-b126128c758a",
+          "nombre": "Sal fina",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 69,
+          "precio": 379.39,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/f21816bb-9677-42fe-bd8f-b126128c758a/300/300"
+        },
+        {
+          "id": "fe5b78ff-c2ac-4b3c-9583-558a24bc6a9d",
+          "nombre": "Chiles Jalapeños en Rodajas",
+          "marca": "Clemente Jacques",
+          "regiones_preferencia": [
+            "México"
+          ],
+          "disponible": true,
+          "cantidad": 57,
+          "precio": 284,
+          "destacado": true,
+          "imagen": "../img/products/fe5b78ff-c2ac-4b3c-9583-558a24bc6a9d.jpg"
+        },
+        {
+          "id": "0bd52d7f-4e2d-43f7-b55f-f55d5fce15f6",
+          "nombre": "Yogur bebible",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 54,
+          "precio": 652.91,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0bd52d7f-4e2d-43f7-b55f-f55d5fce15f6/300/300"
+        },
+        {
+          "id": "1f8971eb-7ff5-40e2-902f-0e9a4960c928",
+          "nombre": "Leche en polvo",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 75,
+          "precio": 198,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/1f8971eb-7ff5-40e2-902f-0e9a4960c928/300/300"
+        },
+        {
+          "id": "4aea402a-0129-41ef-bf44-1739000fa279",
+          "nombre": "Mayonesa",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 64,
+          "precio": 587,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/4aea402a-0129-41ef-bf44-1739000fa279/300/300"
+        },
+        {
+          "id": "3bd3c6d3-a946-4d16-a63d-abe860e97ea3",
+          "nombre": "Cereal de avena",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 44,
+          "precio": 215.43,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3bd3c6d3-a946-4d16-a63d-abe860e97ea3/300/300"
+        },
+        {
+          "id": "dc097c56-8a24-4b4a-827f-1b4a60d4cf49",
+          "nombre": "Cereal de avena",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 8,
+          "precio": 704.39,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/dc097c56-8a24-4b4a-827f-1b4a60d4cf49/300/300"
+        },
+        {
+          "id": "b4a555bb-ea2c-4081-a4d3-73feb3189ecf",
+          "nombre": "Polenta",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 15,
+          "precio": 461.09,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b4a555bb-ea2c-4081-a4d3-73feb3189ecf/300/300"
+        },
+        {
+          "id": "d8bc26b2-3bad-4c4f-b97f-f9b087cdefbf",
+          "nombre": "Gaseosa cola",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 9,
+          "precio": 332.18,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d8bc26b2-3bad-4c4f-b97f-f9b087cdefbf/300/300"
+        },
+        {
+          "id": "2361376a-5752-433e-87b9-d11e8e5e06c0",
+          "nombre": "Panela en bloque",
+          "marca": "El Dorado",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Colombia"
+          ],
+          "disponible": true,
+          "cantidad": 49,
+          "precio": 76,
+          "destacado": true,
+          "imagen": "../img/products/2361376a-5752-433e-87b9-d11e8e5e06c0.jpg"
+        },
+        {
+          "id": "75c0adec-65fe-4528-bdf9-e4fe931d8754",
+          "nombre": "Harina de maíz",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 11,
+          "precio": 392.95,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/75c0adec-65fe-4528-bdf9-e4fe931d8754/300/300"
+        },
+        {
+          "id": "59b9bc52-e798-4f12-b643-c330c85007aa",
+          "nombre": "Galletas dulces",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 40,
+          "precio": 272.41,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/59b9bc52-e798-4f12-b643-c330c85007aa/300/300"
+        },
+        {
+          "id": "7404852c-0c4c-4909-8548-26cb51cf80af",
+          "nombre": "Vinagre blanco",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 13,
+          "precio": 128.63,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/7404852c-0c4c-4909-8548-26cb51cf80af/300/300"
+        },
+        {
+          "id": "9b233999-24c1-429d-a54f-0502f301eeb5",
+          "nombre": "Chips de plátano con limón",
+          "marca": "El Dorado",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Colombia",
+            "Panamá"
+          ],
+          "disponible": true,
+          "cantidad": 77,
+          "precio": 97,
+          "destacado": true,
+          "imagen": "../img/products/9b233999-24c1-429d-a54f-0502f301eeb5.jpg"
+        },
+        {
+          "id": "c960ce53-ff00-4441-8dc0-d00099eb72a3",
+          "nombre": "Sopa instantánea",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 19,
+          "precio": 659.19,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c960ce53-ff00-4441-8dc0-d00099eb72a3/300/300"
+        },
+        {
+          "id": "8d6a718c-8558-4975-b812-9b3955b2866c",
+          "nombre": "Vinagre blanco",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 54,
+          "precio": 550.07,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/8d6a718c-8558-4975-b812-9b3955b2866c/300/300"
+        }
+      ]
+    },
+    {
+      "id": "sabores-del-sur",
+      "nombre": "Sabores del Sur",
+      "tiempo_preparacion": 20,
+      "regiones": [
+        "Argentina",
+        "Chile"     
+      ],
+      "productos": [
+        {
+          "id": "25627187-bb7e-41bc-b6c7-b15499513975",
+          "nombre": "Gaseosa cola",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 88,
+          "precio": 631.92,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/25627187-bb7e-41bc-b6c7-b15499513975/300/300"
+        },
+        {
+          "id": "176ab340-9b24-406c-8e8b-5eb78866bafd",
+          "nombre": "Gaseosa cola",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 81,
+          "precio": 394.72,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/176ab340-9b24-406c-8e8b-5eb78866bafd/300/300"
+        },
+        {
+          "id": "067aee6b-e90c-4c2a-9fab-99e5e8eab5ab",
+          "nombre": "Vinagre blanco",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 95,
+          "precio": 795.09,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/067aee6b-e90c-4c2a-9fab-99e5e8eab5ab/300/300"
+        },
+        {
+          "id": "6845d6fd-54ec-4b68-8d9e-75a1ad61a695",
+          "nombre": "Vinagre blanco",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 86,
+          "precio": 199.19,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6845d6fd-54ec-4b68-8d9e-75a1ad61a695/300/300"
+        },
+        {
+          "id": "13ff39ae-0352-4889-8a58-8fa2a48b8df8",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 68,
+          "precio": 399.8,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/13ff39ae-0352-4889-8a58-8fa2a48b8df8/300/300"
+        },
+        {
+          "id": "49e94aab-d8f0-495a-b78c-1dc9a8a1c3c6",
+          "nombre": "Mezcla para Chimichurri",
+          "marca": "Terre Exotique",
+          "regiones_preferencia": [
+            "Argentina",
+            "Chile",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 54,
+          "precio": 381,
+          "destacado": true,
+          "imagen": "../img/products/49e94aab-d8f0-495a-b78c-1dc9a8a1c3c6.jpg"
+        },
+        {
+          "id": "e297df19-b494-4088-b6d2-b70779da8126",
+          "nombre": "Gaseosa cola",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 62,
+          "precio": 635.24,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e297df19-b494-4088-b6d2-b70779da8126/300/300"
+        },
+        {
+          "id": "8f374490-3b54-488d-b0b8-4f551eca916d",
+          "nombre": "Galletas dulces",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 28,
+          "precio": 495.64,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/8f374490-3b54-488d-b0b8-4f551eca916d/300/300"
+        },
+        {
+          "id": "b7b88ee9-7eeb-4373-8ad3-4a3fd1877ad9",
+          "nombre": "Mermelada de fresa",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 45,
+          "precio": 198.21,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b7b88ee9-7eeb-4373-8ad3-4a3fd1877ad9/300/300"
+        },
+        {
+          "id": "0effe9a1-bc2d-4747-be30-44e8d4c132ee",
+          "nombre": "Gaseosa cola",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 50,
+          "precio": 327.83,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0effe9a1-bc2d-4747-be30-44e8d4c132ee/300/300"
+        },
+        {
+          "id": "2a7272ae-4202-4a2f-baea-10e4262d4a34",
+          "nombre": "Conserva de duraznos",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 84,
+          "precio": 793.74,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2a7272ae-4202-4a2f-baea-10e4262d4a34/300/300"
+        },
+        {
+          "id": "2f24a594-352c-4f11-8e4e-02add496ea78",
+          "nombre": "Leche en polvo",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 25,
+          "precio": 645.85,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2f24a594-352c-4f11-8e4e-02add496ea78/300/300"
+        },
+        {
+          "id": "9b38cc13-b0a5-46f0-8e69-a8bb57ab78a6",
+          "nombre": "Yogur bebible",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 39,
+          "precio": 101.21,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9b38cc13-b0a5-46f0-8e69-a8bb57ab78a6/300/300"
+        },
+        {
+          "id": "00ab4bac-3369-49c0-99be-5b21755d49b3",
+          "nombre": "Comino molido",
+          "marca": "Natco",
+          "regiones_preferencia": [
+            "Chile"
+          ],
+          "disponible": true,
+          "cantidad": 4,
+          "precio": 120,
+          "destacado": true,
+          "imagen": "../img/products/00ab4bac-3369-49c0-99be-5b21755d49b3.jpg"
+        },
+        {
+          "id": "0a3ff49b-5cbf-4c68-b3e4-d869f35dfedf",
+          "nombre": "Corned beef",
+          "marca": "Grace",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Argentina",
+            "Chile"
+          ],
+          "disponible": true,
+          "cantidad": 59,
+          "precio": 361,
+          "destacado": true,
+          "imagen": "../img/products/0a3ff49b-5cbf-4c68-b3e4-d869f35dfedf.jpg"
+        },
+        {
+          "id": "e62501cc-9b6d-4338-b345-42a4be023030",
+          "nombre": "Mayonesa",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 42,
+          "precio": 789.12,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/e62501cc-9b6d-4338-b345-42a4be023030/300/300"
+        },
+        {
+          "id": "3418b233-b622-4265-b5ab-f0124ad4fbfe",
+          "nombre": "Fideos largos",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 48,
+          "precio": 220.88,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3418b233-b622-4265-b5ab-f0124ad4fbfe/300/300"
+        },
+        {
+          "id": "53c5724f-ba8e-44b4-8c29-ce300a602af5",
+          "nombre": "Arroz blanco",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 99,
+          "precio": 635.99,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/53c5724f-ba8e-44b4-8c29-ce300a602af5/300/300"
+        },
+        {
+          "id": "5d3973c5-f050-4d89-bc0c-a6e071a285d7",
+          "nombre": "Mostaza",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 41,
+          "precio": 296.03,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5d3973c5-f050-4d89-bc0c-a6e071a285d7/300/300"
+        },
+        {
+          "id": "2676c639-ea4a-472c-82c7-280dfd2f5be9",
+          "nombre": "Cereal de avena",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 67,
+          "precio": 634.7,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2676c639-ea4a-472c-82c7-280dfd2f5be9/300/300"
+        },
+        {
+          "id": "471e7594-f02c-492b-a090-e77f3e975334",
+          "nombre": "Salsa de tomate",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 75,
+          "precio": 772.9,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/471e7594-f02c-492b-a090-e77f3e975334/300/300"
+        },
+        {
+          "id": "d847d1c3-7524-454a-b7f7-2dd9bdaaa704",
+          "nombre": "Atún en lata",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 57,
+          "precio": 791.3,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/d847d1c3-7524-454a-b7f7-2dd9bdaaa704/300/300"
+        },
+        {
+          "id": "bb951abf-0ffb-4921-8cb8-f70167a1aeae",
+          "nombre": "Pan lactal",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 29,
+          "precio": 204.54,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/bb951abf-0ffb-4921-8cb8-f70167a1aeae/300/300"
+        },
+        {
+          "id": "534698d1-89ae-4c64-a3cf-cb612635bd41",
+          "nombre": "Fideos largos",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 4,
+          "precio": 418.92,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/534698d1-89ae-4c64-a3cf-cb612635bd41/300/300"
+        },
+        {
+          "id": "ba5d99a4-5c91-462c-88c6-ff925a3483d4",
+          "nombre": "Queso rallado",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 80,
+          "precio": 257.96,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ba5d99a4-5c91-462c-88c6-ff925a3483d4/300/300"
+        },
+        {
+          "id": "c9bf9852-67b8-440b-8b70-f04313602e52",
+          "nombre": "Fideos largos",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 86,
+          "precio": 641.09,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c9bf9852-67b8-440b-8b70-f04313602e52/300/300"
+        },
+        {
+          "id": "0a440726-eeb2-4873-8342-6cf8af7eee92",
+          "nombre": "Atún en lata",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 92,
+          "precio": 491.05,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0a440726-eeb2-4873-8342-6cf8af7eee92/300/300"
+        },
+        {
+          "id": "1be334a6-d09c-4b03-a8e2-0ef26c14fe8c",
+          "nombre": "Conserva de duraznos",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 32,
+          "precio": 652.16,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/1be334a6-d09c-4b03-a8e2-0ef26c14fe8c/300/300"
+        },
+        {
+          "id": "2127a178-faeb-446d-84ae-3e2b67b02811",
+          "nombre": "Atún en lata",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 8,
+          "precio": 413.17,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2127a178-faeb-446d-84ae-3e2b67b02811/300/300"
+        },
+        {
+          "id": "714d5a14-1161-45b4-bad6-1d96561a53b3",
+          "nombre": "Frijoles negros",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 16,
+          "precio": 639.72,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/714d5a14-1161-45b4-bad6-1d96561a53b3/300/300"
+        }
+      ]
+    },
+    {
+      "id": "delicias-caribenas",
+      "nombre": "Delicias Caribeñas",
+      "tiempo_preparacion": 5,
+      "regiones": [
+        "Bolivia",
+        "Brasil",
+        "Colombia",
+        "Costa Rica",
+        "Cuba",
+        "Ecuador",
+        "El Salvador",
+        "Guatemala",
+        "Honduras",
+        "México",
+        "Nicaragua",
+        "Panamá",
+        "Paraguay",
+        "Perú",        
+        "Venezuela",
+        "Centroamérica",
+        "Caribe"
+      ],
+      "productos": [
+        {
+          "id": "b9277bc8-410c-4651-a295-83997f420416",
+          "nombre": "Salsa de tomate",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 83,
+          "precio": 398.48,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b9277bc8-410c-4651-a295-83997f420416/300/300"
+        },
+        {
+          "id": "67e80f51-bc5d-4835-a9d7-fb7f3b844522",
+          "nombre": "Fideos largos",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 3,
+          "precio": 426.95,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/67e80f51-bc5d-4835-a9d7-fb7f3b844522/300/300"
+        },
+        {
+          "id": "b2db37c9-c4bf-4830-a4d9-13c3e5b62329",
+          "nombre": "Frijoles negros",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 4,
+          "precio": 639.86,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b2db37c9-c4bf-4830-a4d9-13c3e5b62329/300/300"
+        },
+        {
+          "id": "d58779ce-90c6-4521-8347-84f4ab4605af",
+          "nombre": "Yogur bebible",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 64,
+          "precio": 159.44,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d58779ce-90c6-4521-8347-84f4ab4605af/300/300"
+        },
+        {
+          "id": "187a1ec4-36e3-4a5f-a451-67b2ef602c23",
+          "nombre": "Yogur bebible",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 51,
+          "precio": 140.17,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/187a1ec4-36e3-4a5f-a451-67b2ef602c23/300/300"
+        },
+        {
+          "id": "f63dde0a-e2f5-49a0-abee-950225f73512",
+          "nombre": "Leche en polvo",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 11,
+          "precio": 591.2,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/f63dde0a-e2f5-49a0-abee-950225f73512/300/300"
+        },
+        {
+          "id": "5178a963-7922-4d76-805f-caa85d4fb034",
+          "nombre": "Sal fina",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 57,
+          "precio": 293.73,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5178a963-7922-4d76-805f-caa85d4fb034/300/300"
+        },
+        {
+          "id": "f296aa3f-609f-44e9-81bf-7b30d108a614",
+          "nombre": "Manteca",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 36,
+          "precio": 376.97,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/f296aa3f-609f-44e9-81bf-7b30d108a614/300/300"
+        },
+        {
+          "id": "18ab35c5-9bb6-474b-8a71-212b78bf312e",
+          "nombre": "Leche en polvo",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 6,
+          "precio": 597.24,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/18ab35c5-9bb6-474b-8a71-212b78bf312e/300/300"
+        },
+        {
+          "id": "2fd3a470-1730-479b-a6c8-a49b03a9e603",
+          "nombre": "Mostaza",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 57,
+          "precio": 739.09,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2fd3a470-1730-479b-a6c8-a49b03a9e603/300/300"
+        },
+        {
+          "id": "ee90f066-a66e-4923-acd9-8492bf077589",
+          "nombre": "Conserva de duraznos",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 34,
+          "precio": 790.38,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ee90f066-a66e-4923-acd9-8492bf077589/300/300"
+        },
+        {
+          "id": "0363be59-b65d-472b-bdef-0e0fe795094d",
+          "nombre": "Vinagre blanco",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 28,
+          "precio": 552.28,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/0363be59-b65d-472b-bdef-0e0fe795094d/300/300"
+        },
+        {
+          "id": "32a3b67b-acdc-4768-9d39-3c97c2f730aa",
+          "nombre": "Azúcar rubia",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 95,
+          "precio": 321.92,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/32a3b67b-acdc-4768-9d39-3c97c2f730aa/300/300"
+        },
+        {
+          "id": "3f2d9a30-5506-4bcf-bf91-589522921b15",
+          "nombre": "Atún en lata",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 41,
+          "precio": 338.94,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3f2d9a30-5506-4bcf-bf91-589522921b15/300/300"
+        },
+        {
+          "id": "4f75fd02-2251-4a5a-b676-8b76171de06e",
+          "nombre": "Mermelada de fresa",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 77,
+          "precio": 272.45,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/4f75fd02-2251-4a5a-b676-8b76171de06e/300/300"
+        },
+        {
+          "id": "db71dd14-fdc3-4dca-ae10-e4ee2a427457",
+          "nombre": "Café molido",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 1,
+          "precio": 733.26,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/db71dd14-fdc3-4dca-ae10-e4ee2a427457/300/300"
+        },
+        {
+          "id": "d64684c4-b0e3-4afc-a9a6-c04dfcd1013e",
+          "nombre": "Yogur bebible",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 100,
+          "precio": 472.78,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d64684c4-b0e3-4afc-a9a6-c04dfcd1013e/300/300"
+        },
+        {
+          "id": "b32e63eb-90b1-43b2-b073-6cfeaa9a411c",
+          "nombre": "Leche en polvo",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 47,
+          "precio": 322.98,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b32e63eb-90b1-43b2-b073-6cfeaa9a411c/300/300"
+        },
+        {
+          "id": "5bbe7b71-8813-4f50-8921-bac8f1981bc5",
+          "nombre": "Mostaza",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 83,
+          "precio": 217.13,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5bbe7b71-8813-4f50-8921-bac8f1981bc5/300/300"
+        },
+        {
+          "id": "6d3aaead-fdcd-4cdc-945b-a1ef749832af",
+          "nombre": "Frijoles negros",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 63,
+          "precio": 250.97,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6d3aaead-fdcd-4cdc-945b-a1ef749832af/300/300"
+        },
+        {
+          "id": "31b60445-b1a1-4f09-9453-98c9dce3cd9f",
+          "nombre": "Atún en lata",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 82,
+          "precio": 417.89,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/31b60445-b1a1-4f09-9453-98c9dce3cd9f/300/300"
+        },
+        {
+          "id": "dad1fb43-b402-4a5d-a8b5-7787b8c92d19",
+          "nombre": "Harina de maíz",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 12,
+          "precio": 585.69,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/dad1fb43-b402-4a5d-a8b5-7787b8c92d19/300/300"
+        },
+        {
+          "id": "d6d53209-bf6d-48c1-8d8e-ff1e9a63005b",
+          "nombre": "Arroz blanco",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 98,
+          "precio": 525.82,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d6d53209-bf6d-48c1-8d8e-ff1e9a63005b/300/300"
+        },
+        {
+          "id": "f553fa02-dc13-4e9c-af2c-22b15984f1ef",
+          "nombre": "Azúcar rubia",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 31,
+          "precio": 521.37,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/f553fa02-dc13-4e9c-af2c-22b15984f1ef/300/300"
+        },
+        {
+          "id": "e364c37e-0ddf-4734-bd85-52704b65e218",
+          "nombre": "Frijoles negros",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 66,
+          "precio": 409.15,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e364c37e-0ddf-4734-bd85-52704b65e218/300/300"
+        },
+        {
+          "id": "89dd089c-ad49-4cc9-bda9-9a18ce0bc0d4",
+          "nombre": "Leche en polvo",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 22,
+          "precio": 559.03,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/89dd089c-ad49-4cc9-bda9-9a18ce0bc0d4/300/300"
+        },
+        {
+          "id": "a8ae721b-2983-4bad-a272-6519a205b47c",
+          "nombre": "Sopa instantánea",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 55,
+          "precio": 455.74,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/a8ae721b-2983-4bad-a272-6519a205b47c/300/300"
+        },
+        {
+          "id": "51295f8b-b0f3-4586-907c-d6816a559a48",
+          "nombre": "Polenta",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 52,
+          "precio": 285.02,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/51295f8b-b0f3-4586-907c-d6816a559a48/300/300"
+        },
+        {
+          "id": "ffb0640a-11b1-4212-a8f2-d0c56fedb553",
+          "nombre": "Cereal de avena",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 62,
+          "precio": 709.12,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ffb0640a-11b1-4212-a8f2-d0c56fedb553/300/300"
+        },
+        {
+          "id": "afc2b51d-80e7-40d5-8083-89cd317dd5f9",
+          "nombre": "Frijoles negros",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 86,
+          "precio": 154.35,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/afc2b51d-80e7-40d5-8083-89cd317dd5f9/300/300"
+        }
+      ]
+    },
+    {
+      "id": "asia-gourmet",
+      "nombre": "Asia Gourmet",
+      "tiempo_preparacion": 9,
+      "regiones": [
+        "Tailandia",
+        "Corea del Norte",
+        "Corea",
+        "Corea del Sur",
+        "Japón"
+      ],
+      "productos": [
+        {
+          "id": "ece75a8d-7f18-4e9e-9e12-82e5190f6965",
+          "nombre": "Mayonesa",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 44,
+          "precio": 716.95,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ece75a8d-7f18-4e9e-9e12-82e5190f6965/300/300"
+        },
+        {
+          "id": "2d134ab3-6427-40ee-b6ba-e48de031a4f5",
+          "nombre": "Atún en lata",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 14,
+          "precio": 416.99,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/2d134ab3-6427-40ee-b6ba-e48de031a4f5/300/300"
+        },
+        {
+          "id": "40a590ea-66e8-4f15-b147-2391c1eaa281",
+          "nombre": "Sopa instantánea",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 6,
+          "precio": 799.42,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/40a590ea-66e8-4f15-b147-2391c1eaa281/300/300"
+        },
+        {
+          "id": "6b95751a-80c9-4744-b9eb-a7e87f9253d0",
+          "nombre": "Conserva de duraznos",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 35,
+          "precio": 427.49,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/6b95751a-80c9-4744-b9eb-a7e87f9253d0/300/300"
+        },
+        {
+          "id": "6127cec4-ae88-4e62-9586-6e2334d9ef39",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 36,
+          "precio": 751.56,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6127cec4-ae88-4e62-9586-6e2334d9ef39/300/300"
+        },
+        {
+          "id": "65e8c299-b9f0-480b-9e0a-cc8b077cf640",
+          "nombre": "Fideos largos",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 80,
+          "precio": 762.54,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/65e8c299-b9f0-480b-9e0a-cc8b077cf640/300/300"
+        },
+        {
+          "id": "a67f61d2-0fdb-4293-b01b-d8a0a769952b",
+          "nombre": "Mostaza",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 44,
+          "precio": 146.01,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/a67f61d2-0fdb-4293-b01b-d8a0a769952b/300/300"
+        },
+        {
+          "id": "15fd40da-ef78-48bc-b064-eef21f80c617",
+          "nombre": "Leche en polvo",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 49,
+          "precio": 361.39,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/15fd40da-ef78-48bc-b064-eef21f80c617/300/300"
+        },
+        {
+          "id": "88abebf0-6588-4abe-8e3a-4550c2b8b032",
+          "nombre": "Salsa de tomate",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 68,
+          "precio": 773.88,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/88abebf0-6588-4abe-8e3a-4550c2b8b032/300/300"
+        },
+        {
+          "id": "6b669aee-61a4-435f-89a5-ae8ad38f1795",
+          "nombre": "Polenta",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 92,
+          "precio": 716.94,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6b669aee-61a4-435f-89a5-ae8ad38f1795/300/300"
+        },
+        {
+          "id": "7446fbbc-08b1-4e30-949b-173670c88ec1",
+          "nombre": "Polenta",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 24,
+          "precio": 540.69,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/7446fbbc-08b1-4e30-949b-173670c88ec1/300/300"
+        },
+        {
+          "id": "149449cd-0744-441a-82c2-6ac52c151806",
+          "nombre": "Arroz blanco",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 79,
+          "precio": 500.42,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/149449cd-0744-441a-82c2-6ac52c151806/300/300"
+        },
+        {
+          "id": "fe7db1c3-6dea-4f9c-8a99-546517aa7af9",
+          "nombre": "Manteca",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 62,
+          "precio": 354.96,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/fe7db1c3-6dea-4f9c-8a99-546517aa7af9/300/300"
+        },
+        {
+          "id": "c48196d0-df3b-424a-8d89-d8c6f842be44",
+          "nombre": "Sal fina",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 8,
+          "precio": 678.98,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c48196d0-df3b-424a-8d89-d8c6f842be44/300/300"
+        },
+        {
+          "id": "824a4f83-9869-49c9-806b-450535e602b6",
+          "nombre": "Leche en polvo",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 35,
+          "precio": 600.28,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/824a4f83-9869-49c9-806b-450535e602b6/300/300"
+        },
+        {
+          "id": "1ff2b0c7-3936-4f39-8c77-00bce8b89bec",
+          "nombre": "Azúcar rubia",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 78,
+          "precio": 722.95,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/1ff2b0c7-3936-4f39-8c77-00bce8b89bec/300/300"
+        },
+        {
+          "id": "e496b326-56ff-42de-bd94-65024ca144b7",
+          "nombre": "Café molido",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 18,
+          "precio": 505.47,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e496b326-56ff-42de-bd94-65024ca144b7/300/300"
+        },
+        {
+          "id": "aa5d5e20-d783-4d81-a393-ed2d7649cd86",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 86,
+          "precio": 568.38,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/aa5d5e20-d783-4d81-a393-ed2d7649cd86/300/300"
+        },
+        {
+          "id": "ee7fc48a-aa50-4f55-b902-daef62721f11",
+          "nombre": "Azúcar rubia",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 83,
+          "precio": 538.01,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ee7fc48a-aa50-4f55-b902-daef62721f11/300/300"
+        },
+        {
+          "id": "2f5deb0a-a00a-4d74-88d4-245b10f24c7b",
+          "nombre": "Frijoles negros",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 52,
+          "precio": 595.18,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2f5deb0a-a00a-4d74-88d4-245b10f24c7b/300/300"
+        },
+        {
+          "id": "0abff708-c0e5-4f41-a214-cf80bf90577e",
+          "nombre": "Gaseosa cola",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 14,
+          "precio": 189.16,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0abff708-c0e5-4f41-a214-cf80bf90577e/300/300"
+        },
+        {
+          "id": "ad47f83c-76b9-44c5-9b5f-f97a8e89d64c",
+          "nombre": "Leche en polvo",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 69,
+          "precio": 403.58,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ad47f83c-76b9-44c5-9b5f-f97a8e89d64c/300/300"
+        },
+        {
+          "id": "d969a72e-3262-495f-adef-c6248ebb0c6f",
+          "nombre": "Pasta corta",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 17,
+          "precio": 432.23,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d969a72e-3262-495f-adef-c6248ebb0c6f/300/300"
+        },
+        {
+          "id": "2b9caa1c-1086-4785-b4e3-409350ef677e",
+          "nombre": "Pan lactal",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 80,
+          "precio": 530.86,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2b9caa1c-1086-4785-b4e3-409350ef677e/300/300"
+        },
+        {
+          "id": "8e240ae3-1b27-42cb-aa61-4fc3064b42c5",
+          "nombre": "Aceite de oliva",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 0,
+          "precio": 797.39,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/8e240ae3-1b27-42cb-aa61-4fc3064b42c5/300/300"
+        },
+        {
+          "id": "0dfef25f-00bc-4a93-8920-62d9708d4121",
+          "nombre": "Sal fina",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 9,
+          "precio": 167.15,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0dfef25f-00bc-4a93-8920-62d9708d4121/300/300"
+        },
+        {
+          "id": "2e7adf4d-dacf-4825-98d6-9537a565ea7e",
+          "nombre": "Galletas dulces",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 7,
+          "precio": 173.41,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2e7adf4d-dacf-4825-98d6-9537a565ea7e/300/300"
+        },
+        {
+          "id": "5671cc59-ad29-4d7b-809b-2dfc22ee62b7",
+          "nombre": "Pasta corta",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 85,
+          "precio": 345.5,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5671cc59-ad29-4d7b-809b-2dfc22ee62b7/300/300"
+        },
+        {
+          "id": "71ef4eb1-ce5d-4ea9-b38b-45535f0bf26b",
+          "nombre": "Gaseosa cola",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 55,
+          "precio": 426.44,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/71ef4eb1-ce5d-4ea9-b38b-45535f0bf26b/300/300"
+        },
+        {
+          "id": "d11ded61-5994-4b54-aa84-f51608d90789",
+          "nombre": "Aceitunas verdes",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 65,
+          "precio": 610.98,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d11ded61-5994-4b54-aa84-f51608d90789/300/300"
+        }
+      ]
+    },
+    {
+      "id": "mercado-oriental",
+      "nombre": "Mercado Oriental",
+      "tiempo_preparacion": 13,
+      "regiones": [
+        "Asia",
+        "Sudeste asíatico",
+        "Indonesia",
+        "Tailandia",
+        "Vietnam",
+        "Filipinas"
+      ],
+      "productos": [
+        {
+          "id": "f90782c5-3f3b-4831-a73d-83dd6740b427",
+          "nombre": "Mostaza",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 23,
+          "precio": 128.83,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/f90782c5-3f3b-4831-a73d-83dd6740b427/300/300"
+        },
+        {
+          "id": "9ba76e36-8b5d-4403-a8e6-e8f6042a8576",
+          "nombre": "Polenta",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 58,
+          "precio": 685.02,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9ba76e36-8b5d-4403-a8e6-e8f6042a8576/300/300"
+        },
+        {
+          "id": "a5cb53e0-43ad-46f2-9036-aaa8bf0008d1",
+          "nombre": "Vinagre blanco",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 46,
+          "precio": 204.21,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/a5cb53e0-43ad-46f2-9036-aaa8bf0008d1/300/300"
+        },
+        {
+          "id": "b74ec842-6a74-4bec-aaff-9bde33b3bb31",
+          "nombre": "Sal fina",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 21,
+          "precio": 647.02,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b74ec842-6a74-4bec-aaff-9bde33b3bb31/300/300"
+        },
+        {
+          "id": "dd463444-dbfa-4a9b-b2b6-52a082b06b1b",
+          "nombre": "Pasta corta",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 57,
+          "precio": 178.47,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/dd463444-dbfa-4a9b-b2b6-52a082b06b1b/300/300"
+        },
+        {
+          "id": "f22f8cc3-40f4-428c-8769-a82a6146f839",
+          "nombre": "Pan lactal",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 32,
+          "precio": 658.35,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/f22f8cc3-40f4-428c-8769-a82a6146f839/300/300"
+        },
+        {
+          "id": "fb4d2e54-c00d-4da5-b542-5919c3eaff77",
+          "nombre": "Arroz blanco",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 27,
+          "precio": 682.28,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/fb4d2e54-c00d-4da5-b542-5919c3eaff77/300/300"
+        },
+        {
+          "id": "80bb95f4-0064-416b-a07b-f7bc8fdca521",
+          "nombre": "Mermelada de fresa",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 76,
+          "precio": 779.85,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/80bb95f4-0064-416b-a07b-f7bc8fdca521/300/300"
+        },
+        {
+          "id": "9b4a806d-2171-48f9-a9c4-8bfa2190d866",
+          "nombre": "Fideos largos",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 42,
+          "precio": 210.71,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9b4a806d-2171-48f9-a9c4-8bfa2190d866/300/300"
+        },
+        {
+          "id": "454556a2-c5bf-4814-b728-060276a04948",
+          "nombre": "Yogur bebible",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 21,
+          "precio": 562.22,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/454556a2-c5bf-4814-b728-060276a04948/300/300"
+        },
+        {
+          "id": "a11566b8-9e17-4699-87a7-c52cab3cd2ed",
+          "nombre": "Té negro",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 44,
+          "precio": 167.56,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/a11566b8-9e17-4699-87a7-c52cab3cd2ed/300/300"
+        },
+        {
+          "id": "06de765e-9835-4e00-82e9-3874f0e183e3",
+          "nombre": "Galletas dulces",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 21,
+          "precio": 677.82,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/06de765e-9835-4e00-82e9-3874f0e183e3/300/300"
+        },
+        {
+          "id": "f2de0c93-4edd-48a9-9ba2-0ef8d9a5b96a",
+          "nombre": "Gaseosa cola",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 7,
+          "precio": 291.61,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/f2de0c93-4edd-48a9-9ba2-0ef8d9a5b96a/300/300"
+        },
+        {
+          "id": "0c49e40e-eee5-4098-aac6-c182c9a7f538",
+          "nombre": "Gaseosa cola",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 86,
+          "precio": 692.26,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0c49e40e-eee5-4098-aac6-c182c9a7f538/300/300"
+        },
+        {
+          "id": "39fc50ac-7f45-4c64-bc94-4f0aea09c834",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 92,
+          "precio": 601.17,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/39fc50ac-7f45-4c64-bc94-4f0aea09c834/300/300"
+        },
+        {
+          "id": "4f107ad4-7899-4b91-89d7-831a5d8c3d76",
+          "nombre": "Té negro",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 53,
+          "precio": 384.97,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/4f107ad4-7899-4b91-89d7-831a5d8c3d76/300/300"
+        },
+        {
+          "id": "c482f130-a16d-402c-8732-fe232fdff2a5",
+          "nombre": "Pasta corta",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 67,
+          "precio": 376.83,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c482f130-a16d-402c-8732-fe232fdff2a5/300/300"
+        },
+        {
+          "id": "809cda27-5c5b-4a58-acfe-8a0b66f72ff1",
+          "nombre": "Atún en lata",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 42,
+          "precio": 144.88,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/809cda27-5c5b-4a58-acfe-8a0b66f72ff1/300/300"
+        },
+        {
+          "id": "c7157e7e-e195-4c5b-adb2-5b4edd55d5cb",
+          "nombre": "Jugo natural",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 95,
+          "precio": 371.5,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c7157e7e-e195-4c5b-adb2-5b4edd55d5cb/300/300"
+        },
+        {
+          "id": "368f521e-1ec2-44f8-b6a9-7ca47ddeab16",
+          "nombre": "Sal fina",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 82,
+          "precio": 411.94,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/368f521e-1ec2-44f8-b6a9-7ca47ddeab16/300/300"
+        },
+        {
+          "id": "5a9c743b-cb52-49ce-ac7d-c7a594c78141",
+          "nombre": "Galletas dulces",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 28,
+          "precio": 703.33,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5a9c743b-cb52-49ce-ac7d-c7a594c78141/300/300"
+        },
+        {
+          "id": "c702c5d9-698e-4798-866b-46f8efb21c47",
+          "nombre": "Pasta corta",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 29,
+          "precio": 145.88,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c702c5d9-698e-4798-866b-46f8efb21c47/300/300"
+        },
+        {
+          "id": "bad30223-5df4-4efe-a7b2-531f57ddebcb",
+          "nombre": "Café molido",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 74,
+          "precio": 335.48,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/bad30223-5df4-4efe-a7b2-531f57ddebcb/300/300"
+        },
+        {
+          "id": "10528bab-a09e-4465-b189-4bc9d65798e0",
+          "nombre": "Harina de maíz",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 58,
+          "precio": 413.12,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/10528bab-a09e-4465-b189-4bc9d65798e0/300/300"
+        },
+        {
+          "id": "a08304cd-e261-4cc0-8dc8-aa1cba3adf44",
+          "nombre": "Leche en polvo",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 96,
+          "precio": 287.98,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/a08304cd-e261-4cc0-8dc8-aa1cba3adf44/300/300"
+        },
+        {
+          "id": "5af06cf6-6bb3-479c-9fcc-8f202d7124ac",
+          "nombre": "Frijoles negros",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 60,
+          "precio": 243.62,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5af06cf6-6bb3-479c-9fcc-8f202d7124ac/300/300"
+        },
+        {
+          "id": "8892e0cb-8f3c-47d2-8297-beef33324737",
+          "nombre": "Gaseosa cola",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 43,
+          "precio": 315.13,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/8892e0cb-8f3c-47d2-8297-beef33324737/300/300"
+        },
+        {
+          "id": "0d10cd5a-f6b9-43c5-8a73-091225d00de6",
+          "nombre": "Té negro",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 70,
+          "precio": 461.89,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0d10cd5a-f6b9-43c5-8a73-091225d00de6/300/300"
+        },
+        {
+          "id": "56c06bfc-77ac-4241-9c37-0848b8b7f75d",
+          "nombre": "Pan lactal",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 99,
+          "precio": 602.64,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/56c06bfc-77ac-4241-9c37-0848b8b7f75d/300/300"
+        },
+        {
+          "id": "b2a84700-b4f9-481f-84c5-fc11d78596c1",
+          "nombre": "Yogur bebible",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 87,
+          "precio": 725.86,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/b2a84700-b4f9-481f-84c5-fc11d78596c1/300/300"
+        }
+      ]
+    },
+    {
+      "id": "chinatown-express",
+      "nombre": "Chinatown Express",
+      "tiempo_preparacion": 5,
+      "regiones": [
+        "Asia",
+        "China"
+      ],
+      "productos": [
+        {
+          "id": "64752859-0219-405f-b704-98b9d017aa27",
+          "nombre": "Conserva de duraznos",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 47,
+          "precio": 752.66,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/64752859-0219-405f-b704-98b9d017aa27/300/300"
+        },
+        {
+          "id": "558ee348-9082-4bcd-a19f-072bb3388462",
+          "nombre": "Harina de maíz",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 67,
+          "precio": 740.25,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/558ee348-9082-4bcd-a19f-072bb3388462/300/300"
+        },
+        {
+          "id": "49a9d3b3-b4b6-475b-9172-97ce6eb59f1b",
+          "nombre": "Leche en polvo",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 89,
+          "precio": 335.44,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/49a9d3b3-b4b6-475b-9172-97ce6eb59f1b/300/300"
+        },
+        {
+          "id": "13f90375-433e-44aa-8508-9b895baf185f",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 46,
+          "precio": 121.29,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/13f90375-433e-44aa-8508-9b895baf185f/300/300"
+        },
+        {
+          "id": "7189ad6f-ab1a-47e4-8ca8-fb714176dbdb",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 10,
+          "precio": 510.53,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/7189ad6f-ab1a-47e4-8ca8-fb714176dbdb/300/300"
+        },
+        {
+          "id": "ef3228f5-75da-4c21-bcdb-42b0aa0ed14f",
+          "nombre": "Café molido",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 74,
+          "precio": 388.19,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ef3228f5-75da-4c21-bcdb-42b0aa0ed14f/300/300"
+        },
+        {
+          "id": "d6835d85-dc6d-4e15-bbf5-6a582bfcb159",
+          "nombre": "Café molido",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 76,
+          "precio": 161.4,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/d6835d85-dc6d-4e15-bbf5-6a582bfcb159/300/300"
+        },
+        {
+          "id": "e7c74287-b50f-46ea-9303-a0bc58948fa6",
+          "nombre": "Té negro",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 82,
+          "precio": 279.58,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e7c74287-b50f-46ea-9303-a0bc58948fa6/300/300"
+        },
+        {
+          "id": "e8187132-59a6-4222-a409-6605790b8a58",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 16,
+          "precio": 435.8,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e8187132-59a6-4222-a409-6605790b8a58/300/300"
+        },
+        {
+          "id": "51b02bff-2a27-4538-b811-b75e21a14e28",
+          "nombre": "Café molido",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 2,
+          "precio": 377.01,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/51b02bff-2a27-4538-b811-b75e21a14e28/300/300"
+        },
+        {
+          "id": "9832ef3a-2eb7-47aa-a6d5-e015e16b05a7",
+          "nombre": "Chocolatina",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 79,
+          "precio": 394.23,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9832ef3a-2eb7-47aa-a6d5-e015e16b05a7/300/300"
+        },
+        {
+          "id": "9a3d6756-0013-4131-ae99-7a158819789c",
+          "nombre": "Arroz blanco",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 81,
+          "precio": 473.76,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9a3d6756-0013-4131-ae99-7a158819789c/300/300"
+        },
+        {
+          "id": "f0210de9-f867-4506-8791-22abdb78d102",
+          "nombre": "Mostaza",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 59,
+          "precio": 640.89,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/f0210de9-f867-4506-8791-22abdb78d102/300/300"
+        },
+        {
+          "id": "35237700-6a3b-4890-94fc-8de671a04f96",
+          "nombre": "Pan lactal",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 11,
+          "precio": 165.44,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/35237700-6a3b-4890-94fc-8de671a04f96/300/300"
+        },
+        {
+          "id": "5277b358-c637-41f3-b7ff-636976993a21",
+          "nombre": "Leche en polvo",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 49,
+          "precio": 588.59,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5277b358-c637-41f3-b7ff-636976993a21/300/300"
+        },
+        {
+          "id": "29c35fac-b548-4f20-925a-1161e602e97b",
+          "nombre": "Yogur bebible",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 10,
+          "precio": 524.55,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/29c35fac-b548-4f20-925a-1161e602e97b/300/300"
+        },
+        {
+          "id": "c6c28d87-05fe-40ff-8161-c5c39a7929ff",
+          "nombre": "Manteca",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 70,
+          "precio": 408.44,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c6c28d87-05fe-40ff-8161-c5c39a7929ff/300/300"
+        },
+        {
+          "id": "71046f26-779b-4b28-a9f7-b183ba0cfb27",
+          "nombre": "Jugo natural",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 44,
+          "precio": 305.3,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/71046f26-779b-4b28-a9f7-b183ba0cfb27/300/300"
+        },
+        {
+          "id": "507d1134-30e4-4d11-9e9d-ef3e09241671",
+          "nombre": "Mostaza",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 60,
+          "precio": 527.95,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/507d1134-30e4-4d11-9e9d-ef3e09241671/300/300"
+        },
+        {
+          "id": "d322b650-ecf5-4cb7-a044-ad05191730ce",
+          "nombre": "Fideos largos",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 60,
+          "precio": 701.32,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d322b650-ecf5-4cb7-a044-ad05191730ce/300/300"
+        },
+        {
+          "id": "91ee9fdb-fa76-4496-ae87-170b775f2c30",
+          "nombre": "Sopa instantánea",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 1,
+          "precio": 429.02,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/91ee9fdb-fa76-4496-ae87-170b775f2c30/300/300"
+        },
+        {
+          "id": "6ed2d53c-5c44-4623-9574-3c5d84e7ef73",
+          "nombre": "Azúcar rubia",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 18,
+          "precio": 308.71,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6ed2d53c-5c44-4623-9574-3c5d84e7ef73/300/300"
+        },
+        {
+          "id": "24d075f6-ec73-4a23-858a-037aca4298a9",
+          "nombre": "Vinagre blanco",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 19,
+          "precio": 500.55,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/24d075f6-ec73-4a23-858a-037aca4298a9/300/300"
+        },
+        {
+          "id": "ba0d8d52-3b85-4f33-8af4-67e64ea530c7",
+          "nombre": "Salsa de tomate",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 10,
+          "precio": 145.94,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ba0d8d52-3b85-4f33-8af4-67e64ea530c7/300/300"
+        },
+        {
+          "id": "ea1ea870-babe-4135-a61a-6a285197aa1b",
+          "nombre": "Chocolatina",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 14,
+          "precio": 369.09,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ea1ea870-babe-4135-a61a-6a285197aa1b/300/300"
+        },
+        {
+          "id": "0dfb9b6a-eb33-4302-8fdb-67ba1f6e49b3",
+          "nombre": "Chocolatina",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 71,
+          "precio": 615.93,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0dfb9b6a-eb33-4302-8fdb-67ba1f6e49b3/300/300"
+        },
+        {
+          "id": "402c9475-9bab-43c4-875b-1965a45d2608",
+          "nombre": "Yogur bebible",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 36,
+          "precio": 132.89,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/402c9475-9bab-43c4-875b-1965a45d2608/300/300"
+        },
+        {
+          "id": "e43d03f8-d3ca-471d-bc25-0f242681faf4",
+          "nombre": "Arroz blanco",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 27,
+          "precio": 233.48,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e43d03f8-d3ca-471d-bc25-0f242681faf4/300/300"
+        },
+        {
+          "id": "09e368f1-9044-4f2b-838b-f7d2602eaf59",
+          "nombre": "Café molido",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 9,
+          "precio": 401.54,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/09e368f1-9044-4f2b-838b-f7d2602eaf59/300/300"
+        },
+        {
+          "id": "32b09b4b-4d48-4122-a61b-e735a7d458af",
+          "nombre": "Arroz blanco",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 17,
+          "precio": 439.91,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/32b09b4b-4d48-4122-a61b-e735a7d458af/300/300"
+        }
+      ]
+    },
+    {
+      "id": "american-bites",
+      "nombre": "American Bites",
+      "tiempo_preparacion": 16,
+      "regiones": [
+        "Estados Unidos",
+        "Norte América",
+        "Canada"
+        
+      ],
+      "productos": [
+        {
+          "id": "cf283cf9-21c2-4c4c-a8c6-adb5bbe7151c",
+          "nombre": "Fideos largos",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 30,
+          "precio": 706.58,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/cf283cf9-21c2-4c4c-a8c6-adb5bbe7151c/300/300"
+        },
+        {
+          "id": "d9d8a1c7-a526-4bd9-b62d-19122d02487c",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 18,
+          "precio": 723.1,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d9d8a1c7-a526-4bd9-b62d-19122d02487c/300/300"
+        },
+        {
+          "id": "4a93292d-1ef1-4b8e-8ad3-150099838925",
+          "nombre": "Atún en lata",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 67,
+          "precio": 695.75,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/4a93292d-1ef1-4b8e-8ad3-150099838925/300/300"
+        },
+        {
+          "id": "261f87ca-84e6-4680-a1e3-6b8334787015",
+          "nombre": "Mermelada de fresa",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 21,
+          "precio": 381.32,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/261f87ca-84e6-4680-a1e3-6b8334787015/300/300"
+        },
+        {
+          "id": "d42cbf4b-cb1d-424a-ae25-4b34492c85ef",
+          "nombre": "Atún en lata",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 85,
+          "precio": 659.38,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d42cbf4b-cb1d-424a-ae25-4b34492c85ef/300/300"
+        },
+        {
+          "id": "4aca1b9b-e334-4d60-a4bb-1e836f255f72",
+          "nombre": "Azúcar rubia",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 45,
+          "precio": 584.13,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/4aca1b9b-e334-4d60-a4bb-1e836f255f72/300/300"
+        },
+        {
+          "id": "6106d085-b908-471c-a40e-08a0bc150cc7",
+          "nombre": "Vinagre blanco",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 21,
+          "precio": 461.08,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6106d085-b908-471c-a40e-08a0bc150cc7/300/300"
+        },
+        {
+          "id": "9fd2bb22-19ed-498a-9219-36c3346cf4a8",
+          "nombre": "Yogur bebible",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 49,
+          "precio": 309.99,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9fd2bb22-19ed-498a-9219-36c3346cf4a8/300/300"
+        },
+        {
+          "id": "ecc3f0b8-6518-4acb-a157-ead086518f9a",
+          "nombre": "Frijoles negros",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 69,
+          "precio": 675.25,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/ecc3f0b8-6518-4acb-a157-ead086518f9a/300/300"
+        },
+        {
+          "id": "0aafa86e-7d6d-4ac6-9b21-0dd742cabe63",
+          "nombre": "Leche en polvo",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 91,
+          "precio": 115.48,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0aafa86e-7d6d-4ac6-9b21-0dd742cabe63/300/300"
+        },
+        {
+          "id": "06665998-d888-46f2-a582-efc38b4c2ca5",
+          "nombre": "Mayonesa",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 60,
+          "precio": 531.95,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/06665998-d888-46f2-a582-efc38b4c2ca5/300/300"
+        },
+        {
+          "id": "5ea39348-78c9-482c-92f2-76b0604e7f0b",
+          "nombre": "Mayonesa",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 27,
+          "precio": 172.49,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5ea39348-78c9-482c-92f2-76b0604e7f0b/300/300"
+        },
+        {
+          "id": "24d49bf9-6967-41fd-8d57-9027e4574c01",
+          "nombre": "Polenta",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 2,
+          "precio": 782.94,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/24d49bf9-6967-41fd-8d57-9027e4574c01/300/300"
+        },
+        {
+          "id": "2f4328a7-153c-4830-81da-9e9a60dd14e3",
+          "nombre": "Aceite de oliva",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 30,
+          "precio": 438.39,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2f4328a7-153c-4830-81da-9e9a60dd14e3/300/300"
+        },
+        {
+          "id": "20cb4c6a-183a-4dd6-8830-42bf74eedb19",
+          "nombre": "Mayonesa",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 54,
+          "precio": 618.8,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/20cb4c6a-183a-4dd6-8830-42bf74eedb19/300/300"
+        },
+        {
+          "id": "413e5e51-2027-400d-a3e7-ab6819051228",
+          "nombre": "Jugo natural",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 60,
+          "precio": 651.88,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/413e5e51-2027-400d-a3e7-ab6819051228/300/300"
+        },
+        {
+          "id": "43d417df-b07f-4a30-a354-14daa6467331",
+          "nombre": "Pasta corta",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Venezuela",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 72,
+          "precio": 431.44,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/43d417df-b07f-4a30-a354-14daa6467331/300/300"
+        },
+        {
+          "id": "6e27d4d0-b9c1-4866-8e3e-637b69e2c648",
+          "nombre": "Aceite de oliva",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 81,
+          "precio": 766.21,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6e27d4d0-b9c1-4866-8e3e-637b69e2c648/300/300"
+        },
+        {
+          "id": "c50ff8dc-30eb-49a4-b3c2-d5085f5c7472",
+          "nombre": "Chocolatina",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 1,
+          "precio": 448.16,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c50ff8dc-30eb-49a4-b3c2-d5085f5c7472/300/300"
+        },
+        {
+          "id": "7df506e6-e54f-4535-98ac-ef801bfe5339",
+          "nombre": "Sal fina",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 43,
+          "precio": 618.31,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/7df506e6-e54f-4535-98ac-ef801bfe5339/300/300"
+        },
+        {
+          "id": "6a1d5113-37b6-4548-8894-dbee79b36b4f",
+          "nombre": "Azúcar rubia",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 22,
+          "precio": 356.13,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6a1d5113-37b6-4548-8894-dbee79b36b4f/300/300"
+        },
+        {
+          "id": "62816d5d-b2bc-4b5c-bf9a-442fbcd4b723",
+          "nombre": "Gaseosa cola",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 48,
+          "precio": 195.21,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/62816d5d-b2bc-4b5c-bf9a-442fbcd4b723/300/300"
+        },
+        {
+          "id": "d2c46aa3-e79c-4b5f-b3d0-ea5c6f349527",
+          "nombre": "Manteca",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 63,
+          "precio": 261.95,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d2c46aa3-e79c-4b5f-b3d0-ea5c6f349527/300/300"
+        },
+        {
+          "id": "1b30ea4f-2d00-4021-ab7b-39eee7dfe548",
+          "nombre": "Jugo natural",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 60,
+          "precio": 185.13,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/1b30ea4f-2d00-4021-ab7b-39eee7dfe548/300/300"
+        },
+        {
+          "id": "95487761-f749-4074-b590-3af435a675d2",
+          "nombre": "Chocolatina",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 11,
+          "precio": 626.8,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/95487761-f749-4074-b590-3af435a675d2/300/300"
+        },
+        {
+          "id": "d37e6516-b2fd-44e0-b954-f50552f8790f",
+          "nombre": "Gaseosa cola",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 92,
+          "precio": 670.82,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d37e6516-b2fd-44e0-b954-f50552f8790f/300/300"
+        },
+        {
+          "id": "1289602e-1a78-45ee-8dbd-1ae8e872e744",
+          "nombre": "Queso rallado",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 55,
+          "precio": 764.67,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/1289602e-1a78-45ee-8dbd-1ae8e872e744/300/300"
+        },
+        {
+          "id": "7b108a2f-e182-411a-b43a-b8965e66c428",
+          "nombre": "Sal fina",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 89,
+          "precio": 241.56,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/7b108a2f-e182-411a-b43a-b8965e66c428/300/300"
+        },
+        {
+          "id": "9b2d8992-9fb6-47ab-a92d-e6f3245590e2",
+          "nombre": "Sal fina",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 66,
+          "precio": 389.71,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9b2d8992-9fb6-47ab-a92d-e6f3245590e2/300/300"
+        },
+        {
+          "id": "f2516139-48df-4313-be94-dcb998986930",
+          "nombre": "Harina de maíz",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 67,
+          "precio": 533.78,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/f2516139-48df-4313-be94-dcb998986930/300/300"
+        }
+      ]
+    },
+    {
+      "id": "8e23d203-9535-438f-8c5e-c28636bb01e0",
+      "nombre": "USA Snacks & Treats",
+      "tiempo_preparacion": 20,
+      "regiones": [
+        "Estados Unidos",
+        "Norte América"
+      ],
+      "productos": [
+        {
+          "id": "9f26d7d2-6383-41f8-afbd-e4f5f70ce8ac",
+          "nombre": "Galletas dulces",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 80,
+          "precio": 645.97,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9f26d7d2-6383-41f8-afbd-e4f5f70ce8ac/300/300"
+        },
+        {
+          "id": "3f85dac9-6819-41b5-bbed-2687cb400cc5",
+          "nombre": "Arroz blanco",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 78,
+          "precio": 466.69,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3f85dac9-6819-41b5-bbed-2687cb400cc5/300/300"
+        },
+        {
+          "id": "63cc528c-bdda-44e4-857b-c806e4ebad36",
+          "nombre": "Mayonesa",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 26,
+          "precio": 718.39,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/63cc528c-bdda-44e4-857b-c806e4ebad36/300/300"
+        },
+        {
+          "id": "fef2d21e-7e85-4ee9-a75c-497728c74163",
+          "nombre": "Yogur bebible",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 87,
+          "precio": 757.71,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/fef2d21e-7e85-4ee9-a75c-497728c74163/300/300"
+        },
+        {
+          "id": "fb3f964f-0828-4158-a81c-abb62b9f3106",
+          "nombre": "Mayonesa",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 4,
+          "precio": 692.24,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/fb3f964f-0828-4158-a81c-abb62b9f3106/300/300"
+        },
+        {
+          "id": "09bd2034-2603-4f82-be05-0830030f38a9",
+          "nombre": "Leche en polvo",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 13,
+          "precio": 741.66,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/09bd2034-2603-4f82-be05-0830030f38a9/300/300"
+        },
+        {
+          "id": "b7b65272-588b-43cc-b878-2ef9ab2e96c0",
+          "nombre": "Cereal de avena",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 64,
+          "precio": 745.06,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b7b65272-588b-43cc-b878-2ef9ab2e96c0/300/300"
+        },
+        {
+          "id": "6fd2387c-c24d-49f8-ac72-e2a053e1988a",
+          "nombre": "Frijoles negros",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 78,
+          "precio": 159.55,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6fd2387c-c24d-49f8-ac72-e2a053e1988a/300/300"
+        },
+        {
+          "id": "e87df825-fc92-4073-8873-11156d9d2a2f",
+          "nombre": "Mayonesa",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 86,
+          "precio": 234.88,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e87df825-fc92-4073-8873-11156d9d2a2f/300/300"
+        },
+        {
+          "id": "0b825b02-c2a1-480e-9c3b-4cdd5b82806e",
+          "nombre": "Mostaza",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 94,
+          "precio": 304.62,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0b825b02-c2a1-480e-9c3b-4cdd5b82806e/300/300"
+        },
+        {
+          "id": "3a9a74e6-e8d8-4b99-8f74-faa293a9d38c",
+          "nombre": "Sal fina",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 63,
+          "precio": 300.08,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3a9a74e6-e8d8-4b99-8f74-faa293a9d38c/300/300"
+        },
+        {
+          "id": "9b842bc1-9550-444c-bf53-346b76d3c9c8",
+          "nombre": "Sal fina",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 15,
+          "precio": 668.52,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9b842bc1-9550-444c-bf53-346b76d3c9c8/300/300"
+        },
+        {
+          "id": "503d2fdc-dcb4-4362-95b3-f455f4ad1165",
+          "nombre": "Jugo natural",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 5,
+          "precio": 464.3,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/503d2fdc-dcb4-4362-95b3-f455f4ad1165/300/300"
+        },
+        {
+          "id": "64a2bbf8-ad60-4bd8-816c-502f1d7e7672",
+          "nombre": "Queso rallado",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 69,
+          "precio": 778.0,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/64a2bbf8-ad60-4bd8-816c-502f1d7e7672/300/300"
+        },
+        {
+          "id": "28598b4c-09af-4b42-8b4c-f5f2540af264",
+          "nombre": "Aceite de oliva",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 38,
+          "precio": 622.92,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/28598b4c-09af-4b42-8b4c-f5f2540af264/300/300"
+        },
+        {
+          "id": "65eba3b8-1f9b-44d0-bdee-bf641071ea64",
+          "nombre": "Fideos largos",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 42,
+          "precio": 170.11,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/65eba3b8-1f9b-44d0-bdee-bf641071ea64/300/300"
+        },
+        {
+          "id": "f6b6d86a-9bdc-421b-bc60-b4192176ee94",
+          "nombre": "Mayonesa",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 0,
+          "precio": 421.17,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/f6b6d86a-9bdc-421b-bc60-b4192176ee94/300/300"
+        },
+        {
+          "id": "81b76635-fc06-4bf3-8ee7-4d5d7efab750",
+          "nombre": "Galletas dulces",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 61,
+          "precio": 692.33,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/81b76635-fc06-4bf3-8ee7-4d5d7efab750/300/300"
+        },
+        {
+          "id": "e4b8f96b-6e37-4282-818d-2e6d9fef6744",
+          "nombre": "Café molido",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 58,
+          "precio": 526.93,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e4b8f96b-6e37-4282-818d-2e6d9fef6744/300/300"
+        },
+        {
+          "id": "69139077-e405-45b6-bbe6-5abbcb66c0dc",
+          "nombre": "Yogur bebible",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 57,
+          "precio": 715.75,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/69139077-e405-45b6-bbe6-5abbcb66c0dc/300/300"
+        },
+        {
+          "id": "66d5b49d-a0f7-4bc8-af39-0e84d7273e94",
+          "nombre": "Sal fina",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 90,
+          "precio": 772.91,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/66d5b49d-a0f7-4bc8-af39-0e84d7273e94/300/300"
+        },
+        {
+          "id": "87a992aa-2671-414c-8b53-e61e9b6d534e",
+          "nombre": "Té negro",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 9,
+          "precio": 691.53,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/87a992aa-2671-414c-8b53-e61e9b6d534e/300/300"
+        },
+        {
+          "id": "d4c2bddb-f4fe-4539-9af9-000e8efea9e4",
+          "nombre": "Aceite de oliva",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 29,
+          "precio": 121.27,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d4c2bddb-f4fe-4539-9af9-000e8efea9e4/300/300"
+        },
+        {
+          "id": "ba9bf845-010c-4281-86e9-6f3bf3a7b8b1",
+          "nombre": "Café molido",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 71,
+          "precio": 648.62,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ba9bf845-010c-4281-86e9-6f3bf3a7b8b1/300/300"
+        },
+        {
+          "id": "d11bcc4f-0cee-4d6c-b253-732a9ff95c35",
+          "nombre": "Sal fina",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 74,
+          "precio": 528.08,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d11bcc4f-0cee-4d6c-b253-732a9ff95c35/300/300"
+        },
+        {
+          "id": "d050dacf-9d13-4660-8d54-928a1593c98e",
+          "nombre": "Atún en lata",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 51,
+          "precio": 151.98,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d050dacf-9d13-4660-8d54-928a1593c98e/300/300"
+        },
+        {
+          "id": "dfba0fb8-51b0-45ed-bcf3-6e2fc12df90c",
+          "nombre": "Aceite de oliva",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 31,
+          "precio": 439.73,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/dfba0fb8-51b0-45ed-bcf3-6e2fc12df90c/300/300"
+        },
+        {
+          "id": "22733f2c-5b7a-49b0-a594-6e99a4948dc0",
+          "nombre": "Mayonesa",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 28,
+          "precio": 153.34,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/22733f2c-5b7a-49b0-a594-6e99a4948dc0/300/300"
+        },
+        {
+          "id": "ef2be20e-1c8e-4eae-951b-c1a95814e13f",
+          "nombre": "Polenta",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 28,
+          "precio": 757.52,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ef2be20e-1c8e-4eae-951b-c1a95814e13f/300/300"
+        },
+        {
+          "id": "b11214ff-958d-4d69-b30f-a0c52aecd18d",
+          "nombre": "Aceite de oliva",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 28,
+          "precio": 255.02,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b11214ff-958d-4d69-b30f-a0c52aecd18d/300/300"
+        }
+      ]
+    },
+    {
+      "id": "sabor-iberico",
+      "nombre": "Sabor Iberico",
+      "tiempo_preparacion": 14,
+      "regiones": [
+        "España",
+        "Europa",
+        "Península Ibérica"
+      ],
+      "productos": [
+        {
+          "id": "166e5b7b-d2f0-475e-b61a-7e3932176ec4",
+          "nombre": "Jugo natural",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 34,
+          "precio": 640.0,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/166e5b7b-d2f0-475e-b61a-7e3932176ec4/300/300"
+        },
+        {
+          "id": "48af7c3a-211a-48a2-b279-6e3b0c55e0e5",
+          "nombre": "Azúcar rubia",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 29,
+          "precio": 494.84,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/48af7c3a-211a-48a2-b279-6e3b0c55e0e5/300/300"
+        },
+        {
+          "id": "3e48db2a-932b-456b-a237-32a3cb0334f2",
+          "nombre": "Atún en lata",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 21,
+          "precio": 636.76,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3e48db2a-932b-456b-a237-32a3cb0334f2/300/300"
+        },
+        {
+          "id": "3e6a5621-9b57-4a4c-954a-9db43aad1754",
+          "nombre": "Yogur bebible",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 44,
+          "precio": 267.79,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3e6a5621-9b57-4a4c-954a-9db43aad1754/300/300"
+        },
+        {
+          "id": "a7574768-ce24-4b56-9f55-fabf176a616f",
+          "nombre": "Queso rallado",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 31,
+          "precio": 732.43,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/a7574768-ce24-4b56-9f55-fabf176a616f/300/300"
+        },
+        {
+          "id": "be8087c3-4fca-497b-846d-81afde6e7551",
+          "nombre": "Mayonesa",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 52,
+          "precio": 766.4,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/be8087c3-4fca-497b-846d-81afde6e7551/300/300"
+        },
+        {
+          "id": "cc0f07b3-5642-42fd-95f2-e1f370c6a095",
+          "nombre": "Café molido",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 50,
+          "precio": 399.51,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/cc0f07b3-5642-42fd-95f2-e1f370c6a095/300/300"
+        },
+        {
+          "id": "56ccb280-050f-4027-bde1-bb8e76ecfd8a",
+          "nombre": "Atún en lata",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 19,
+          "precio": 504.45,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/56ccb280-050f-4027-bde1-bb8e76ecfd8a/300/300"
+        },
+        {
+          "id": "5bbd7a39-92bc-444c-b57f-6bab7d6cfa8c",
+          "nombre": "Aceite de oliva",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 90,
+          "precio": 546.86,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5bbd7a39-92bc-444c-b57f-6bab7d6cfa8c/300/300"
+        },
+        {
+          "id": "6f34d64d-07dd-4d8c-8ab5-183ea08e9fa4",
+          "nombre": "Leche en polvo",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 91,
+          "precio": 133.02,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6f34d64d-07dd-4d8c-8ab5-183ea08e9fa4/300/300"
+        },
+        {
+          "id": "3ffa953a-514a-47af-a52c-ba6b1516b38c",
+          "nombre": "Manteca",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 12,
+          "precio": 560.5,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3ffa953a-514a-47af-a52c-ba6b1516b38c/300/300"
+        },
+        {
+          "id": "72a7e70d-2226-49c8-b8dc-fcc49104fccf",
+          "nombre": "Manteca",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 83,
+          "precio": 662.08,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/72a7e70d-2226-49c8-b8dc-fcc49104fccf/300/300"
+        },
+        {
+          "id": "42659535-433d-4564-8554-59db3fc3dd1c",
+          "nombre": "Harina de maíz",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 57,
+          "precio": 643.95,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/42659535-433d-4564-8554-59db3fc3dd1c/300/300"
+        },
+        {
+          "id": "9106ab44-f3c6-4ad0-9dd4-789f2539e706",
+          "nombre": "Sal fina",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 21,
+          "precio": 387.37,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/9106ab44-f3c6-4ad0-9dd4-789f2539e706/300/300"
+        },
+        {
+          "id": "7da21ab4-f365-4210-995a-c7d7bc01de0a",
+          "nombre": "Harina de maíz",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 74,
+          "precio": 651.18,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/7da21ab4-f365-4210-995a-c7d7bc01de0a/300/300"
+        },
+        {
+          "id": "96c5900f-d57d-4036-8002-5bbe2fea4786",
+          "nombre": "Mostaza",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 24,
+          "precio": 134.1,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/96c5900f-d57d-4036-8002-5bbe2fea4786/300/300"
+        },
+        {
+          "id": "4ee169de-e5ab-4361-83d2-6c96b73b38c2",
+          "nombre": "Salsa de tomate",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 7,
+          "precio": 348.09,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/4ee169de-e5ab-4361-83d2-6c96b73b38c2/300/300"
+        },
+        {
+          "id": "0f404cf2-9a38-42a4-8a62-4f94c313a2bf",
+          "nombre": "Mayonesa",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 87,
+          "precio": 677.53,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/0f404cf2-9a38-42a4-8a62-4f94c313a2bf/300/300"
+        },
+        {
+          "id": "4b48b0b5-1427-4fb5-967a-c7c9db035ea0",
+          "nombre": "Harina de maíz",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 82,
+          "precio": 472.18,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/4b48b0b5-1427-4fb5-967a-c7c9db035ea0/300/300"
+        },
+        {
+          "id": "ed11b544-02ae-450f-871d-393a6f6359fa",
+          "nombre": "Harina de maíz",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 86,
+          "precio": 262.09,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/ed11b544-02ae-450f-871d-393a6f6359fa/300/300"
+        },
+        {
+          "id": "682a57ad-de24-4be1-a1a2-28e03e662622",
+          "nombre": "Jugo natural",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 59,
+          "precio": 470.75,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/682a57ad-de24-4be1-a1a2-28e03e662622/300/300"
+        },
+        {
+          "id": "2f3b4821-e06c-463e-b09f-24263ed7f848",
+          "nombre": "Yogur bebible",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 23,
+          "precio": 710.09,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/2f3b4821-e06c-463e-b09f-24263ed7f848/300/300"
+        },
+        {
+          "id": "8f017eb4-bd27-4bb2-a010-c15b24fc502d",
+          "nombre": "Mostaza",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 77,
+          "precio": 713.34,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/8f017eb4-bd27-4bb2-a010-c15b24fc502d/300/300"
+        },
+        {
+          "id": "5654e044-7555-4663-b0d7-e60ef0971efe",
+          "nombre": "Gaseosa cola",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 69,
+          "precio": 448.96,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5654e044-7555-4663-b0d7-e60ef0971efe/300/300"
+        },
+        {
+          "id": "23b31e31-17d4-4b8e-8c2b-d00132b98420",
+          "nombre": "Aceitunas verdes",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 94,
+          "precio": 314.91,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/23b31e31-17d4-4b8e-8c2b-d00132b98420/300/300"
+        },
+        {
+          "id": "c7dbf29f-fef3-4deb-a17b-b9fbac427a87",
+          "nombre": "Polenta",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 16,
+          "precio": 212.73,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/c7dbf29f-fef3-4deb-a17b-b9fbac427a87/300/300"
+        },
+        {
+          "id": "c24e675c-9b96-4251-8817-43e685332fe2",
+          "nombre": "Jugo natural",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 11,
+          "precio": 443.57,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c24e675c-9b96-4251-8817-43e685332fe2/300/300"
+        },
+        {
+          "id": "34352d3b-b5da-4ae9-bcf1-384dd66fa6a7",
+          "nombre": "Yogur bebible",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 99,
+          "precio": 779.55,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/34352d3b-b5da-4ae9-bcf1-384dd66fa6a7/300/300"
+        },
+        {
+          "id": "35b5e238-e206-4464-9313-8c3b56fe992f",
+          "nombre": "Sopa instantánea",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 54,
+          "precio": 389.7,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/35b5e238-e206-4464-9313-8c3b56fe992f/300/300"
+        },
+        {
+          "id": "84320d7a-ad8f-455f-ab1c-9b1ed99330c4",
+          "nombre": "Jugo natural",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 38,
+          "precio": 115.83,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/84320d7a-ad8f-455f-ab1c-9b1ed99330c4/300/300"
+        }
+      ]
+    },
+    {
+      "id": "maison-francaise",
+      "nombre": "Maison Française",
+      "tiempo_preparacion": 15,
+      "regiones": [
+        "Francia",
+        "Europa"
+      ],
+      "productos": [
+        {
+          "id": "dae8c14b-33d5-4209-9973-a13bfe02f08e",
+          "nombre": "Manteca",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 74,
+          "precio": 551.83,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/dae8c14b-33d5-4209-9973-a13bfe02f08e/300/300"
+        },
+        {
+          "id": "92216cdc-4e55-4c28-815d-642510b56dcd",
+          "nombre": "Pasta corta",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 88,
+          "precio": 780.3,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/92216cdc-4e55-4c28-815d-642510b56dcd/300/300"
+        },
+        {
+          "id": "c7b4081c-5930-4665-a746-d048ab5d0be5",
+          "nombre": "Leche en polvo",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 39,
+          "precio": 425.21,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c7b4081c-5930-4665-a746-d048ab5d0be5/300/300"
+        },
+        {
+          "id": "8eb48a3a-fe98-41cc-a3f5-56dd9643464f",
+          "nombre": "Aceitunas verdes",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 51,
+          "precio": 262.26,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/8eb48a3a-fe98-41cc-a3f5-56dd9643464f/300/300"
+        },
+        {
+          "id": "23e6f8db-7f2a-4a92-9238-19412447bc26",
+          "nombre": "Arroz blanco",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Uruguay",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 32,
+          "precio": 142.44,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/23e6f8db-7f2a-4a92-9238-19412447bc26/300/300"
+        },
+        {
+          "id": "3bc279d3-23c7-4b1e-bff8-0938f14bdb1c",
+          "nombre": "Gaseosa cola",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 61,
+          "precio": 450.19,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3bc279d3-23c7-4b1e-bff8-0938f14bdb1c/300/300"
+        },
+        {
+          "id": "5242c6db-d1ea-4637-ae8b-695e5fc0b013",
+          "nombre": "Sal fina",
+          "marca": "DelMonte",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 43,
+          "precio": 340.68,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/5242c6db-d1ea-4637-ae8b-695e5fc0b013/300/300"
+        },
+        {
+          "id": "ffb0e195-6440-4931-86d9-23ef082ba99f",
+          "nombre": "Mermelada de fresa",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "CentroAmerica",
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 36,
+          "precio": 487.75,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/ffb0e195-6440-4931-86d9-23ef082ba99f/300/300"
+        },
+        {
+          "id": "c02399dd-99a4-44d0-9624-fce34d8944fc",
+          "nombre": "Pan lactal",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 84,
+          "precio": 271.57,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/c02399dd-99a4-44d0-9624-fce34d8944fc/300/300"
+        },
+        {
+          "id": "b8f0d24c-1948-495c-b5d8-4ee3236c76c6",
+          "nombre": "Conserva de duraznos",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 5,
+          "precio": 494.47,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b8f0d24c-1948-495c-b5d8-4ee3236c76c6/300/300"
+        },
+        {
+          "id": "6dbe134c-1e5d-4b5d-988e-cbab85882e66",
+          "nombre": "Yogur bebible",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 100,
+          "precio": 754.42,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6dbe134c-1e5d-4b5d-988e-cbab85882e66/300/300"
+        },
+        {
+          "id": "e49d4e1d-37b5-46fb-8c89-a002300da1f5",
+          "nombre": "Yogur bebible",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 45,
+          "precio": 696.24,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/e49d4e1d-37b5-46fb-8c89-a002300da1f5/300/300"
+        },
+        {
+          "id": "398c90c4-d4d3-4c8e-984a-93ea61a7b62f",
+          "nombre": "Café molido",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Venezuela",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 49,
+          "precio": 173.15,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/398c90c4-d4d3-4c8e-984a-93ea61a7b62f/300/300"
+        },
+        {
+          "id": "9eb57f8c-1df5-4535-9879-3665a9b9613d",
+          "nombre": "Sal fina",
+          "marca": "La Italiana",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 49,
+          "precio": 726.92,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/9eb57f8c-1df5-4535-9879-3665a9b9613d/300/300"
+        },
+        {
+          "id": "3fd0db7c-6c92-4aad-969d-c02fd4f3c02c",
+          "nombre": "Mermelada de fresa",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 93,
+          "precio": 268.03,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/3fd0db7c-6c92-4aad-969d-c02fd4f3c02c/300/300"
+        },
+        {
+          "id": "53452889-3622-49f0-9466-5433c7ad7187",
+          "nombre": "Harina de maíz",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Europa",
+            "CentroAmerica",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 27,
+          "precio": 615.97,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/53452889-3622-49f0-9466-5433c7ad7187/300/300"
+        },
+        {
+          "id": "dc2d9216-66e8-4168-97db-66dfcc7b4529",
+          "nombre": "Galletas dulces",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay",
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 84,
+          "precio": 353.57,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/dc2d9216-66e8-4168-97db-66dfcc7b4529/300/300"
+        },
+        {
+          "id": "da01834b-c8e6-4ef7-adb5-a87ae3d5c58e",
+          "nombre": "Arroz blanco",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 68,
+          "precio": 715.9,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/da01834b-c8e6-4ef7-adb5-a87ae3d5c58e/300/300"
+        },
+        {
+          "id": "392e2851-adce-4541-a59f-941bb1132b9a",
+          "nombre": "Azúcar rubia",
+          "marca": "Goya",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 62,
+          "precio": 285.63,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/392e2851-adce-4541-a59f-941bb1132b9a/300/300"
+        },
+        {
+          "id": "52a0f83d-fa7c-42ac-a39d-0bc9f7f5791c",
+          "nombre": "Salsa de tomate",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Europa",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 26,
+          "precio": 396.69,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/52a0f83d-fa7c-42ac-a39d-0bc9f7f5791c/300/300"
+        },
+        {
+          "id": "6d29eb9c-152d-4498-99f8-0e158531cf22",
+          "nombre": "Gaseosa cola",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": true,
+          "cantidad": 25,
+          "precio": 359.98,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/6d29eb9c-152d-4498-99f8-0e158531cf22/300/300"
+        },
+        {
+          "id": "ee78006f-5e8e-48df-a02b-07bf22067174",
+          "nombre": "Atún en lata",
+          "marca": "Borges",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 69,
+          "precio": 790.64,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/ee78006f-5e8e-48df-a02b-07bf22067174/300/300"
+        },
+        {
+          "id": "1074283a-500b-4376-9c66-381ae1a3781d",
+          "nombre": "Pasta corta",
+          "marca": "Colonia",
+          "regiones_preferencia": [
+            "Europa"
+          ],
+          "disponible": false,
+          "cantidad": 78,
+          "precio": 360.71,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/1074283a-500b-4376-9c66-381ae1a3781d/300/300"
+        },
+        {
+          "id": "b5847c07-2c43-4e97-8ca3-13071cee53c3",
+          "nombre": "Fideos largos",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": false,
+          "cantidad": 50,
+          "precio": 267.98,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/b5847c07-2c43-4e97-8ca3-13071cee53c3/300/300"
+        },
+        {
+          "id": "1cc311cb-1d49-4af1-9462-a1b3e233c7eb",
+          "nombre": "Arroz blanco",
+          "marca": "Santa Rosa",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela",
+            "CentroAmerica"
+          ],
+          "disponible": true,
+          "cantidad": 62,
+          "precio": 130.09,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/1cc311cb-1d49-4af1-9462-a1b3e233c7eb/300/300"
+        },
+        {
+          "id": "6a8491ad-6864-491d-886a-7681c2362ccf",
+          "nombre": "Gaseosa cola",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Uruguay"
+          ],
+          "disponible": true,
+          "cantidad": 1,
+          "precio": 254.38,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/6a8491ad-6864-491d-886a-7681c2362ccf/300/300"
+        },
+        {
+          "id": "d9c042a9-7693-4459-b6ca-632ca6558ce7",
+          "nombre": "Mostaza",
+          "marca": "Nestlé",
+          "regiones_preferencia": [
+            "Europa",
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 50,
+          "precio": 741.23,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/d9c042a9-7693-4459-b6ca-632ca6558ce7/300/300"
+        },
+        {
+          "id": "75b9b38d-ada3-46e2-95a5-830a77d56299",
+          "nombre": "Pasta corta",
+          "marca": "Finca",
+          "regiones_preferencia": [
+            "Venezuela",
+            "Uruguay"
+          ],
+          "disponible": false,
+          "cantidad": 37,
+          "precio": 264.53,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/75b9b38d-ada3-46e2-95a5-830a77d56299/300/300"
+        },
+        {
+          "id": "c89ee0f0-50fd-4175-84d5-82aa9dfe8b28",
+          "nombre": "Arroz blanco",
+          "marca": "Tradición",
+          "regiones_preferencia": [
+            "Uruguay",
+            "Venezuela"
+          ],
+          "disponible": false,
+          "cantidad": 41,
+          "precio": 427.27,
+          "destacado": true,
+          "imagen": "https://picsum.photos/seed/c89ee0f0-50fd-4175-84d5-82aa9dfe8b28/300/300"
+        },
+        {
+          "id": "1a4148ab-3a60-491b-bc17-6d2be3c6b043",
+          "nombre": "Harina de maíz",
+          "marca": "Tropical",
+          "regiones_preferencia": [
+            "Europa",
+            "Venezuela"
+          ],
+          "disponible": true,
+          "cantidad": 46,
+          "precio": 580.71,
+          "destacado": false,
+          "imagen": "https://picsum.photos/seed/1a4148ab-3a60-491b-bc17-6d2be3c6b043/300/300"
+        }
+      ]
+    }
+  ]
+}
