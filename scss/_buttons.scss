@@ -4,17 +4,30 @@
     background-color: $color-accent;
     border-color: $color-accent;
     color: $color-white;
-    &:hover{
+    &:hover,
+    &:focus{
         background-color: $color-accent-dark;
         border-color: $color-accent-dark;
         color: $color-white;
     }
 }
 
+.btn-outline-primary{
+    border-color: $color-accent;
+    color: $color-accent;
+    &:hover,
+    &:focus{
+        background-color: rgba($color-accent, 0.2);
+        color: $color-accent;
+        border-color: $color-accent;
+    }
+}
+
 .btn-outline-secondary{
     border-color: $color-primary;
     color: $color-primary;
-    &:hover{
+    &:hover,
+    &:focus{
         background-color: $color-primary;
     }
 }

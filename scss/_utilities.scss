@@ -3,15 +3,28 @@
 // Utilidades
 //
 
+.small{
+    font-size: 0.78rem !important;
+}
 
 .text-right{
     text-align: right;
 }
 
 .text-color-danger{
-    color: rgb(219, 53, 69);
+    color: $color-danger;
 }
 
+.color-primary{
+    color: $color-primary;
+}
+.color-accent{
+    color: $color-accent;
+}
+
+.color-light{
+    color: $color-text-light;
+}
 
 //
 // Backgrounds

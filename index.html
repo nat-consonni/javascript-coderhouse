@@ -86,7 +86,7 @@
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-2">
-                  <div class="card-region bg-color-support-1 text-center p-3 rounded-1 h-100">
+                  <div class="card-region bg-color-support-1 text-center p-2 rounded-1 h-100">
                     <div class="img-wrapper mb-3">
                       <img src="/img/products/SDM-010.webp" class="d-block w-100" alt="...">
                     </div>
@@ -95,7 +95,7 @@
                   </div>
                 </div><!-- cierro columna card region-->
                 <div class="col-2">
-                  <div class="card-region bg-color-support-2 text-center p-3 rounded-1 h-100">
+                  <div class="card-region bg-color-support-2 text-center p-2 rounded-1 h-100">
                     <div class="img-wrapper mb-3">
                       <img src="/img/products/ERM-010.webp" class="d-block w-100" alt="...">
                     </div>
@@ -104,7 +104,7 @@
                   </div>
                 </div><!-- cierro columna card region-->
                 <div class="col-2">
-                  <div class="card-region bg-color-support-3 text-center p-3 rounded-1 h-100">
+                  <div class="card-region bg-color-support-3 text-center p-2 rounded-1 h-100">
                     <div class="img-wrapper mb-3">
                       <img src="/img/products/CYS-005.png" class="d-block w-100" alt="...">
                     </div>
@@ -113,7 +113,7 @@
                   </div>
                 </div><!-- cierro columna card region-->
                 <div class="col-2">
-                  <div class="card-region bg-color-support-4 text-center p-3 rounded-1 h-100">
+                  <div class="card-region bg-color-support-4 text-center p-2 rounded-1 h-100">
                     <div class="img-wrapper mb-3">
                       <img src="/img/products/SDM-010.webp" class="d-block w-100" alt="...">
                     </div>
@@ -122,7 +122,7 @@
                   </div>
                 </div><!-- cierro columna card region-->
                 <div class="col-2">
-                  <div class="card-region bg-color-support-5 text-center p-3 rounded-1 h-100">
+                  <div class="card-region bg-color-support-5 text-center p-2 rounded-1 h-100">
                     <div class="img-wrapper mb-3">
                       <img src="/img/products/ERM-010.webp" class="d-block w-100" alt="...">
                     </div>
@@ -131,7 +131,7 @@
                   </div>
                 </div><!-- cierro columna card region-->
                 <div class="col-2">
-                  <div class="card-region bg-color-support-6 text-center p-3 rounded-1 h-100">
+                  <div class="card-region bg-color-support-6 text-center p-2 rounded-1 h-100">
                     <div class="img-wrapper mb-3">
                       <img src="/img/products/CYS-005.png" class="d-block w-100" alt="...">
                     </div>
@@ -318,21 +318,61 @@
           
       </section><!-- resultado de busqueda -->
 
-      <!-- Botón flotante del carrito -->
-      <button id="btn-carrito-flotante" class="btn btn-primary rounded-circle shadow-lg position-relative btn-carrito-flotante" title="Ver carrito">
+      <!-- PROBANDO NUEVO CARRITO -->
+
+      <!-- Button trigger modal -->
+      <button type="button" id="btn-carrito-flotante" class="btn btn-primary rounded-circle shadow-lg btn-carrito-flotante" data-bs-toggle="modal" data-bs-target="#modalCarrito" title="Ver carrito">
         <i class="bi bi-cart-fill fs-4"></i>
-        <span id="badge-carrito" class="d-none">
-          <span class="visually-hidden">Productos en el carrito</span>
-        </span>
       </button>
-
-      <!-- Burbuja del carrito -->
-      <div id="burbuja-carrito" class="carrito-popup card shadow p-3 d-none">
-        <h5 class="mb-3">Carrito de compras</h5>
-        <div id="carrito" class="mb-3 carrito-contenido"></div>
-        <button id="btn-vaciar" class="btn btn-danger btn-sm">Vaciar Carrito</button>
-      </div>
-
+      
+      <!-- Modal -->
+      <div class="modal wrapper-modal-carrito fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarrito" aria-hidden="true">
+        <div class="modal-dialog modal-carrito">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalCarritoLabel">Carrito de compras</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+              <ul class="nav nav-tabs d-flex flex-row" id="myTab" role="tablist">
+                <li class="nav-item p-0" role="presentation">
+                  <button class="nav-link active" id="tus-productos-tab" data-bs-toggle="tab" data-bs-target="#tus-productos" type="button" role="tab" aria-controls="tus-productos" aria-selected="true">1. Tus productos <span id="contador-productos" class="step-status cantidad-productos-carrito small">(4)</span></button>
+                </li>
+                <li class="nav-item p-0" role="presentation">
+                  <button class="nav-link" id="envio-tab" data-bs-toggle="tab" data-bs-target="#envio" type="button" role="tab" aria-controls="envio" aria-selected="false">2. Datos de envío <span class="step-status pending"><i class="bi bi-check"></i></span></button>
+                </li>
+                <li class="nav-item p-0" role="presentation">
+                  <button class="nav-link disabled" id="facturacion-tab" data-bs-toggle="tab" data-bs-target="#facturacion" type="button" role="tab" aria-controls="facturacion" aria-selected="false">3. Finaliza tu compra <span class="step-status pending"><i class="bi bi-check"></i></span></button>
+                </li>
+              </ul>
+              <div class="tab-content p-3" id="tus-productos-tab">
+                <div class="tab-pane fade show active" id="tus-productos" role="tabpanel" aria-labelledby="tus-productos-tab">
+                  <p id="mensajeCarritoVacio" class="carrito-vacio text-center rounded-1 color-light">Aún no has agregado productos a tu compra.<span class="d-block small mt-1">Prueba buscar productos por nombre, marca ó región en el buscador, o encuentra nuestros productos destacados.</span></p>
+                  <div id="carrito" class="wrapper-productos">
+                  </div><!-- cierro wrapper-productos -->
+                  <div class="modal-footer pt-3 border-top">
+                    <p class="h5 color-primary w-100 text-right mb-3">Total: <span id="sumaPrecioTotal">$159</span></p>
+                    <div id="accionesCarrito" class="actions">
+                      <button id="btn-vaciar" class="btn btn-link btn-vaciar btn-sm">Vaciar Carrito</button>
+                      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">Seguir comprando</button>
+                      <button id="btn-continuar" type="button" class="btn btn-primary btn-sm">Continuar <i class="bi bi-arrow-right-short"></i></button>
+                    </div>
+                  </div><!-- cierro footer total -->
+                </div> <!-- cierro tab -->
+                
+                <div class="tab-pane fade" id="envio" role="tabpanel" aria-labelledby="envio-tab">
+                  <h2 class="mb-3">Datos de envío</h2>
+                  <p class="lead">This is the profile tab content.</p>
+                </div>
+                <div class="tab-pane fade" id="facturacion" role="tabpanel" aria-labelledby="facturacion-tab">
+                  <h2 class="mb-3">Detalles de Facturación</h2>
+                  <p class="lead">This is the contact tab content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- cierro modal carrito -->
 
 
       
@@ -485,7 +525,7 @@
                 <button class="btn btn-sm btn-outline-secondary btn-mas" data-id="${item.id}">+</button>
               </div>
             </div>    
-          </div> <!-- card-destacados -->
+          </div> <!-- card-producto -->
         </div><!-- cierro columna card destacados-->
       </div>
     </div><!-- cierro productos destacados -->

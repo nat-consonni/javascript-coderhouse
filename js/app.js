@@ -1,18 +1,34 @@
 let datosApp = {}; // variable global para guardar los datos
 
+// ---------------------------------------------------------------------------------------------------
 // Cargar JSON una vez
+
 fetch('./data/productos.json')
 .then(res => res.json())
 .then(data => {
   datosApp = data; // guardar globalmente
   console.log('Datos recibidos:', data); // BORRAR LUEGO
   mostrarDestacados(); // llamar destacados
+
+  // Carrito guardado
+  const carritoGuardado = JSON.parse(localStorage.getItem("carrito"));
+  if (Array.isArray(carritoGuardado)) {
+    carrito = carritoGuardado;
+    actualizarCarritoUI();
+    // Corregir controles de cantidad
+    carrito.forEach(item => {
+      mostrarControlesCantidad(item.id, item.cantidad);
+    });
+  }
 })
 
 .catch(err => console.error('Error al cargar JSON:', err));
 
+
+// ---------------------------------------------------------------------------------------------------
 //
 // Función para mostrar destacados
+
 function mostrarDestacados() {
   const contenedor = document.getElementById('productos-destacados');
   contenedor.innerHTML = ''; // limpiar antes
@@ -31,7 +47,7 @@ function mostrarDestacados() {
     const col = document.createElement('div');
     col.classList.add('col-2');
     col.innerHTML = `
-      <div class="card-producto border p-3 rounded-1 h-100 d-flex flex-column">
+      <div class="card-producto border p-2 rounded-1 h-100 d-flex flex-column">
         <div class="img-wrapper mb-3">
           <img src="${item.imagen}" class="d-block w-100" alt="${item.nombre}">
         </div>
@@ -55,34 +71,98 @@ function mostrarDestacados() {
     `;
     contenedor.appendChild(col);
   });
-}
+} // end destacados
 
-
+// ---------------------------------------------------------------------------------------------------
 //
-// Funciones del carrito
+// Variables para proceso de compra
 
 let carrito = [];
 const contenedorCarrito = document.getElementById("carrito");
+const accionesCarrito = document.getElementById("accionesCarrito");
 const btnVaciar = document.getElementById("btn-vaciar");
 const burbujaCarrito = document.getElementById("burbuja-carrito");
 const btnCarritoFlotante = document.getElementById("btn-carrito-flotante");
+const mensajeVacio = document.getElementById("mensajeCarritoVacio");
+// tabs
+const tabEnvioTab = document.getElementById("envio-tab");
+const tabFacturacionTab = document.getElementById("facturacion-tab");
 
-// Abrir carrito
-btnCarritoFlotante.addEventListener('click', function(){
-  if(burbujaCarrito.classList.contains('d-none')){
-    burbujaCarrito.classList.remove('d-none')
-  }else{
-    burbujaCarrito.classList.add('d-none');
-  };
-}); // funcion abrir carrito
+// ---------------------------------------------------------------------------------------------------
+// Boton continuar proceso de compra
 
+document.querySelector('#btn-continuar').addEventListener('click', () => {
+  const tab = new bootstrap.Tab(document.querySelector('#envio-tab'));
+  tab.show();
+}); // end btn-continuar
+
+
+// ---------------------------------------------------------------------------------------------------
+//
+// Agregar producto al carrito
 
 function actualizarCarritoUI() {
-  // Acá podrías redibujar un resumen del carrito si querés
-  console.log('Carrito:', carrito);
-}
+  
+  console.log('Carrito:', carrito); // BORRAR LUEGO
 
-// Delegación para botones "Agregar"
+  contenedorCarrito.innerHTML = ''; // limpiar antes -- o sea que cada vez que agrega algo borra, chequear de optimizar
+
+  //agrega o quita mensaje de carrito vacio y boton vaciar carrito
+  if(carrito.length > 0){
+    mensajeVacio.classList.add('d-none');
+    accionesCarrito.classList.remove('d-none');
+    tabEnvioTab.classList.remove('disabled');
+
+  }else{
+    mensajeVacio.classList.remove('d-none');
+    accionesCarrito.classList.add('d-none');
+    tabEnvioTab.classList.add('disabled');
+  };
+
+  let totalPrecio = 0;
+  let numeroProductos = 0;
+
+  carrito.forEach(productos =>{
+    totalPrecio += productos.precio * productos.cantidad;
+    numeroProductos += productos.cantidad;
+
+    const cardProductoCarrito = document.createElement('div');
+    cardProductoCarrito.classList.add('card-producto', 'border', 'p-2', 'rounded-1', 'd-flex', 'flex-column', 'mb-3');
+   
+    cardProductoCarrito.innerHTML=`
+      <div class="row">
+        <div class="col-2">
+          <div class="img-wrapper mb-0">
+            <img src="${productos.imagen}" class="d-block w-100" alt="Imagen del producto: ${productos.nombre}">
+          </div>
+        </div>
+        <div class="col-6 pt-2">
+          <p class="h6 text-break">${productos.nombre}</p>
+          <a class="nombre-tienda" href="#">${productos.tienda}</a>  
+          <p class="region">${productos.regiones_preferencia}</p>            
+        </div>
+        <div class="col-4">
+          <div class="footer d-flex justify-content-between align-items-end h-100">
+            <div class="cantidad-group align-items-center pb-1" data-id="${productos.id}">
+              <button class="btn btn-sm btn-outline-secondary btn-menos" data-id="${productos.id}">-</button>
+              <span class="cantidad">${productos.cantidad}</span>
+              <button class="btn btn-sm btn-outline-secondary btn-mas" data-id="${productos.id}">+</button>
+            </div>
+            <p class="d-flex mb-0 price"><span class="d-inline-block">$</span> ${productos.precio * productos.cantidad}</p>
+          </div>
+        </div>
+      </div>                    
+    `;
+    contenedorCarrito.appendChild(cardProductoCarrito);
+  });// cierro carrito for each
+
+  document.querySelector('#sumaPrecioTotal').textContent = `$${totalPrecio}`;
+  document.querySelector('#contador-productos').textContent = `(${numeroProductos})`;
+  localStorage.setItem('carrito', JSON.stringify(carrito)); // guardo en el local storage
+
+};
+
+// Botones para "Agregar"
 document.addEventListener('click', (e) => {
   const btnAgregar = e.target.closest('.btn-primary[data-id]');
   if (!btnAgregar) return;
@@ -138,6 +218,28 @@ document.addEventListener('click', (e) => {
   actualizarCarritoUI();
 });
 
+
+
+// ---------------------------------------------------------------------------------------------------
+//
+// Vaciar carrito
+btnVaciar.addEventListener('click', () => {
+  carrito = [];
+  localStorage.removeItem("carrito");
+  actualizarCarritoUI();
+
+  document.querySelectorAll('.cantidad-group').forEach(el => el.classList.add('d-none'));
+  document.querySelectorAll('.agregar').forEach(el => el.classList.remove('d-none'));
+});
+
+
+
+
+//////////
+
+
+
+// 
 function buscarProductoPorId(id) {
   for (const tienda of datosApp.tiendas) {
     const prod = tienda.productos.find(p => p.id === id);

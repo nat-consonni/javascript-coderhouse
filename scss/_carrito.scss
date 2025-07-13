@@ -1,5 +1,4 @@
 @import "variables";
-@import "utilities";
 
 .btn-carrito-flotante {
   position: fixed !important;
@@ -7,26 +6,80 @@
   right: 20px;
   width: 60px;
   height: 60px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 999999999;
 }
 
-.carrito-popup {
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  width: 350px;
-  max-height: 600px;
-  background-color: $color-white;
-  z-index: 1001;
-  .precio{
-    font-size: 1rem;
+.carrito-vacio{
+  margin-top: 3rem;
+  padding-top: 2rem;
+  background-image: url("../img/general/imago.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.btn-vaciar{
+  margin-right: 1rem;
+  color: $color-danger;
+  text-decoration: none;
+  &:hover{
+    background: rgba($color-danger, 0.1);
+    border-radius: 0.2rem;
+    color: $color-danger;
   }
 }
 
-.carrito-contenido{
+.wrapper-modal-carrito{
+  .nav-link{
+    color: $color-accent;
+    border-radius: 0px;
+    border-top: transparent;
+    &:not(.active):hover,
+    &:hover:not(.disabled){
+      text-decoration: underline;
+    }
+    &.active{
+      color: $color-primary;
+      background-color: rgba($color-primary, 0.1);
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    &.disabled{
+      color: $color-text-light;
+    }
+    span{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      i{
+        color: $color-success;
+      }
+      &.pending i{
+        display: none;
+      }
+    }
+  }
+
+  //Arreglar responsivo
+  .wrapper-productos{
+    height: 381px;
     overflow-y: auto;
-    border-bottom: 1px solid $color-text-light;
+    overflow-x: hidden;
+  }
 }
+
+.modal-carrito{
+  position: absolute;
+  right: 48px;
+  bottom: 54px;
+  width: 580px;
+  max-width: 100%;
+  .modal-content{
+    border-bottom-right-radius: 0px;
+    height: 620px;
+    max-height: 90%;
+    overflow: hidden;
+  }
+}
+
+
