@@ -5,10 +5,15 @@
     border-color: $color-accent;
     color: $color-white;
     &:hover,
-    &:focus{
-        background-color: $color-accent-dark;
-        border-color: $color-accent-dark;
+    &:focus,
+    &:active{
+        background-color: $color-accent-dark !important;
+        border-color: $color-accent-dark !important;
         color: $color-white;
+    }
+    &.disabled{
+        background-color: rgba($color-accent, 0.5);
+        border-color: rgba($color-accent, 0.5);
     }
 }
 

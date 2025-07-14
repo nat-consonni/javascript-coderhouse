@@ -145,10 +145,14 @@ a:hover {
   border-color: #FF8000;
   color: #FFFFFF;
 }
-.btn-primary:hover, .btn-primary:focus {
-  background-color: rgb(204, 102.4, 0);
-  border-color: rgb(204, 102.4, 0);
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: rgb(204, 102.4, 0) !important;
+  border-color: rgb(204, 102.4, 0) !important;
   color: #FFFFFF;
+}
+.btn-primary.disabled {
+  background-color: rgba(255, 128, 0, 0.5);
+  border-color: rgba(255, 128, 0, 0.5);
 }
 
 .btn-outline-primary {
@@ -454,8 +458,10 @@ a:hover {
 .wrapper-modal-carrito .nav-link span.pending i {
   display: none;
 }
-.wrapper-modal-carrito .wrapper-productos {
-  height: 381px;
+.wrapper-modal-carrito .wrapper-productos,
+.wrapper-modal-carrito .form-envio,
+.wrapper-modal-carrito .form-pago {
+  height: 374px;
   overflow-y: auto;
   overflow-x: hidden;
 }

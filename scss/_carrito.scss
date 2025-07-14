@@ -61,8 +61,10 @@
   }
 
   //Arreglar responsivo
-  .wrapper-productos{
-    height: 381px;
+  .wrapper-productos,
+  .form-envio,
+  .form-pago{
+    height: 374px;
     overflow-y: auto;
     overflow-x: hidden;
   }
@@ -83,3 +85,5 @@
 }
 
 
+//
+// Form envío

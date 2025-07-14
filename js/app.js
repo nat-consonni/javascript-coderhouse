@@ -27,6 +27,13 @@ fetch('./data/productos.json')
 
 // ---------------------------------------------------------------------------------------------------
 //
+// iniciar Tooltips
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+// ---------------------------------------------------------------------------------------------------
+//
 // Función para mostrar destacados
 
 function mostrarDestacados() {
@@ -73,6 +80,8 @@ function mostrarDestacados() {
   });
 } // end destacados
 
+
+
 // ---------------------------------------------------------------------------------------------------
 //
 // Variables para proceso de compra
@@ -87,14 +96,6 @@ const mensajeVacio = document.getElementById("mensajeCarritoVacio");
 // tabs
 const tabEnvioTab = document.getElementById("envio-tab");
 const tabFacturacionTab = document.getElementById("facturacion-tab");
-
-// ---------------------------------------------------------------------------------------------------
-// Boton continuar proceso de compra
-
-document.querySelector('#btn-continuar').addEventListener('click', () => {
-  const tab = new bootstrap.Tab(document.querySelector('#envio-tab'));
-  tab.show();
-}); // end btn-continuar
 
 
 // ---------------------------------------------------------------------------------------------------
@@ -162,6 +163,7 @@ function actualizarCarritoUI() {
 
 };
 
+//
 // Botones para "Agregar"
 document.addEventListener('click', (e) => {
   const btnAgregar = e.target.closest('.btn-primary[data-id]');
@@ -219,35 +221,6 @@ document.addEventListener('click', (e) => {
 });
 
 
-
-// ---------------------------------------------------------------------------------------------------
-//
-// Vaciar carrito
-btnVaciar.addEventListener('click', () => {
-  carrito = [];
-  localStorage.removeItem("carrito");
-  actualizarCarritoUI();
-
-  document.querySelectorAll('.cantidad-group').forEach(el => el.classList.add('d-none'));
-  document.querySelectorAll('.agregar').forEach(el => el.classList.remove('d-none'));
-});
-
-
-
-
-//////////
-
-
-
-// 
-function buscarProductoPorId(id) {
-  for (const tienda of datosApp.tiendas) {
-    const prod = tienda.productos.find(p => p.id === id);
-    if (prod) return { ...prod, tienda: tienda.nombre };
-  }
-  return null;
-}
-
 function mostrarControlesCantidad(id, cantidad) {
   const group = document.querySelector(`.cantidad-group[data-id="${id}"]`);
   const btnAgregar = document.querySelector(`.agregar[data-id="${id}"]`);
@@ -276,3 +249,194 @@ function ocultarControlesCantidad(id) {
   group.classList.add('d-none');
   btnAgregar.classList.remove('d-none');
 }
+
+
+
+// ---------------------------------------------------------------------------------------------------
+//
+// Vaciar carrito
+btnVaciar.addEventListener('click', () => {
+  carrito = [];
+  localStorage.removeItem("carrito");
+  actualizarCarritoUI();
+
+  document.querySelectorAll('.cantidad-group').forEach(el => el.classList.add('d-none'));
+  document.querySelectorAll('.agregar').forEach(el => el.classList.remove('d-none'));
+});
+
+
+// ---------------------------------------------------------------------------------------------------
+//
+// Datos de envío
+
+// Elementos del formulario
+const form = document.getElementById('formDatosEnvio');
+
+// IDs de los campos del formulario a validar/guardar
+const camposEnvio = [
+  'nombreCliente',
+  'emailCliente',
+  'calleCliente',
+  'numeroCliente',
+  'ciudadCliente',
+  'departamentoCliente',
+  'cpCliente'
+];
+const camposPago = [
+  'tarjetaCliente',
+  'expiraciontarjetaCliente',
+  'cvcCliente'
+];
+
+// Función para guardar en localStorage
+function guardarDatosEnvio() {
+  const datosFormEnvio = {};
+
+  camposEnvio.forEach(id => {
+    const el = document.getElementById(id);
+    datosFormEnvio[id] = el.value.trim();
+  });
+
+  localStorage.setItem('datosEnvio', JSON.stringify(datosFormEnvio));
+}
+
+function guardarDatosPago() {
+  const datosFormPago = {};
+
+  camposPago.forEach(id => {
+    const el = document.getElementById(id);
+    datosFormPago[id] = el.value.trim();
+  });
+
+  localStorage.setItem('datosPago', JSON.stringify(datosFormPago));
+}
+
+// Validar formulario
+function validarFormulario(listaCampos) {
+  let esValido = true;
+  listaCampos.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el.value.trim()) {
+      el.classList.add('is-invalid');
+      esValido = false;
+    } else {
+      el.classList.remove('is-invalid');
+    }
+  });
+  return esValido;
+}
+
+// Calcular tiempo de preparacion
+function calcularTiempoPreparacion(carrito, tiendas) {
+  const tiendasUsadas = new Set();
+
+  // Registrar qué tiendas están en el carrito
+  carrito.forEach(producto => {
+    tiendasUsadas.add(producto.tiendaId);
+  });
+
+  // Sumar el tiempo de preparación de cada tienda única
+  let totalTiempo = 0;
+
+  tiendasUsadas.forEach(tiendaId => {
+    const tienda = tiendas.find(t => t.id === tiendaId);
+    if (tienda) {
+      totalTiempo += tienda.tiempo_preparacion || 0;
+    }
+  });
+
+  return totalTiempo;
+}
+
+
+// -----------------------------------------------------------------------------------------
+// Auto-guardar en localStorage si el usuario cambia un campo y sale de él
+camposEnvio.forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('blur', guardarDatosEnvio);
+});
+camposPago.forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('blur', guardarDatosPago);
+});
+
+
+// -----------------------------------------------------------------------------------------
+//
+// Resumen de compra para crear el modal de compra realizada
+function mostrarResumenCompra() {
+  const datosEnvio = JSON.parse(localStorage.getItem('datosEnvio')) || {};
+  const cantidadTotal = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
+  const totalPrecio = carrito.reduce((acc, prod) => acc + (prod.precio * prod.cantidad), 0);
+  const tiempo = calcularTiempoPreparacion(carrito, tiendas);
+
+  console.log(`Tiempo total de preparación: ${tiempo} minutos`);
+
+  //const horas = Math.floor(tiempo / 60);
+  //const minutos = tiempo % 60;
+  const tiempoFormateado = isNaN(tiempo) ? "No disponible" : `${tiempo} min`; //`${horas > 0 ? horas + 'h ' : ''}${minutos} min`;
+
+  const mensajeHTML = `
+    <p>Gracias <strong>${datosEnvio.nombreCliente || 'Cliente'}</strong>, tu compra ha sido registrada con éxito!</p>
+    <p><i class="bi bi-box2-heart"></i> <strong>${cantidadTotal}</strong> producto(s)</p>
+    <p><i class="bi bi-coin"></i> Total: <strong>$${totalPrecio.toFixed(2)}</strong></p>
+    <p><i class="bi bi-hourglass-split"></i> Tiempo estimado de preparación: <strong>${tiempoFormateado}</strong></p>
+    <hr>
+    <p><strong>Dirección de envío:</strong><br>
+    ${datosEnvio.calleCliente || ''} ${datosEnvio.numeroCliente || ''}, ${datosEnvio.ciudadCliente || ''}, ${datosEnvio.departamentoCliente || ''} - CP ${datosEnvio.cpCliente || ''}</p>
+    <p><strong>Email:</strong> ${datosEnvio.emailCliente || ''}</p>
+    <hr>
+    <p>Se enviará una confirmación al correo electrónico proporcionado.</p>`;
+
+  document.getElementById('detalleConfirmacion').innerHTML = mensajeHTML;
+
+  const modal = new bootstrap.Modal(document.getElementById('modalConfirmacion'));
+  modal.show();
+}
+
+// para que resetee todo despues de terminar de comprar exitosamente
+document.querySelector('#cerrarModalConfirmacionCompra').addEventListener('click',() =>{
+  localStorage.removeItem('carrito');
+  location.reload(true);
+});  
+
+
+// ---------------------------------------------------------------------------------------------------
+// Proceso de compra
+
+document.querySelector('#btnContinuar').addEventListener('click', () => {
+  const tabTusProductos = document.getElementById('tus-productos');
+  const tabDatosEnvio = document.getElementById('envio');
+  const tabDatosPago = document.getElementById('facturacion');
+
+  if(tabTusProductos.classList.contains('active') && (carrito.length > 0)){ // si la tab 1 esta activa, y hay productos en el carrito
+    
+    const siguienteTab = new bootstrap.Tab(document.querySelector('#envio-tab'));
+    siguienteTab.show();
+
+    document.querySelector('#buttonContinuarTextContent').textContent = 'Continuar';
+
+  }else if( tabDatosEnvio.classList.contains('active') ){ // la tab 2 está activa
+    if(validarFormulario(camposEnvio)){ // y los datos de envio estan completos
+      guardarDatosEnvio(); //guardo los daots
+
+      const siguienteTab = new bootstrap.Tab(document.querySelector('#facturacion-tab'));
+      document.getElementById('facturacion-tab').classList.remove('disabled'); // activo el boton
+      siguienteTab.show(); // navego hacia el ultimo paso
+
+      document.querySelector('#buttonContinuarTextContent').textContent = 'Finalizar compra'; // cambio el lable del boton
+    }else{ // y los datos de envio NO estan completos
+      alert("Debes completar los datos de envío para proceder");
+      document.getElementById('facturacion-tab').classList.add('disabled'); // desactivo el boton
+    }
+  }else if( tabDatosPago.classList.contains('active')){ // si la tab 3 está activa
+    
+    if(validarFormulario(camposPago)){ // y el formlario de pago esta completo
+      mostrarResumenCompra(); // mostrar resumen de compra
+    }else{
+      alert("Completa los datos de pago para finalizar la compra");
+    }
+  }
+
+}); // end Proceso de compra
+

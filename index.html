@@ -345,31 +345,124 @@
                   <button class="nav-link disabled" id="facturacion-tab" data-bs-toggle="tab" data-bs-target="#facturacion" type="button" role="tab" aria-controls="facturacion" aria-selected="false">3. Finaliza tu compra <span class="step-status pending"><i class="bi bi-check"></i></span></button>
                 </li>
               </ul>
-              <div class="tab-content p-3" id="tus-productos-tab">
+              <div class="tab-content p-3 pb-0" id="tus-productos-tab">
                 <div class="tab-pane fade show active" id="tus-productos" role="tabpanel" aria-labelledby="tus-productos-tab">
                   <p id="mensajeCarritoVacio" class="carrito-vacio text-center rounded-1 color-light">Aún no has agregado productos a tu compra.<span class="d-block small mt-1">Prueba buscar productos por nombre, marca ó región en el buscador, o encuentra nuestros productos destacados.</span></p>
                   <div id="carrito" class="wrapper-productos">
                   </div><!-- cierro wrapper-productos -->
-                  <div class="modal-footer pt-3 border-top">
-                    <p class="h5 color-primary w-100 text-right mb-3">Total: <span id="sumaPrecioTotal">$159</span></p>
-                    <div id="accionesCarrito" class="actions">
-                      <button id="btn-vaciar" class="btn btn-link btn-vaciar btn-sm">Vaciar Carrito</button>
-                      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">Seguir comprando</button>
-                      <button id="btn-continuar" type="button" class="btn btn-primary btn-sm">Continuar <i class="bi bi-arrow-right-short"></i></button>
-                    </div>
-                  </div><!-- cierro footer total -->
                 </div> <!-- cierro tab -->
                 
                 <div class="tab-pane fade" id="envio" role="tabpanel" aria-labelledby="envio-tab">
-                  <h2 class="mb-3">Datos de envío</h2>
-                  <p class="lead">This is the profile tab content.</p>
-                </div>
+                  
+                  <form id="formDatosEnvio" class="form-envio">
+                    <p>¿Quién recibe el envío?</p>
+                    <div class="form-floating mb-4">
+                      <input type="text" class="form-control" id="nombreCliente" placeholder="Tu nombre completo">
+                      <label for="nombreCliente">Nombre completo</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                      <input type="email" class="form-control" id="emailCliente" placeholder="tuemail@email.com">
+                      <label for="emailCliente">Email</label>
+                    </div>
+                    <p>Dirección de envío</p>
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="form-floating mb-4">
+                          <input type="address" class="form-control" id="calleCliente" placeholder="Ej.: Av. Principal">
+                          <label for="calleCliente">Calle</label>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="form-floating mb-4">
+                          <input type="address" class="form-control" id="numeroCliente"  placeholder="1234">
+                          <label for="numeroCliente">Nro</label>
+                        </div>
+                      </div>
+                    </div><!-- cierro row -->
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-floating mb-4">
+                          <input type="address" class="form-control" id="ciudadCliente"  placeholder="Ej.: Montevideo">
+                          <label for="ciudadCliente">Ciudad</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-floating mb-4">
+                          <select class="form-select" id="departamentoCliente" placeholder="Ej.: Montevideo">
+                            <option value="1">Artigas</option>
+                            <option value="2">Canelones</option>
+                            <option value="3">Cerro Largo</option>
+                            <option value="4">Colonia</option>
+                            <option value="5">Durazno</option>
+                            <option value="6">Flores</option>
+                            <option value="7">Florida</option>
+                            <option value="8">Lavalleja</option>
+                            <option value="9">Maldonado</option>
+                            <option value="10">Montevideo</option>
+                            <option value="11">Paysandú</option>
+                            <option value="12">Río Negro</option>
+                            <option value="13">Rivera</option>
+                            <option value="14">Rocha</option>
+                            <option value="15">Salto</option>
+                            <option value="16">San José</option>
+                            <option value="17">Soriano</option>
+                            <option value="18">Tacuarembó</option>
+                            <option value="19">Treinta y Tres</option>
+                          </select>
+                          <label for="departamentoCliente">Departamento</label>
+                        </div>
+                      </div>
+                    </div><!-- cierro row -->
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="form-floating mb-4">
+                          <input type="address" class="form-control" id="cpCliente" placeholder="Ej.: 12345">
+                          <label for="cpCliente">Código postal</label>
+                        </div>
+                      </div>
+                    </div><!-- cierro row -->
+                  </form>
+                </div><!-- cierro tab -->
+
                 <div class="tab-pane fade" id="facturacion" role="tabpanel" aria-labelledby="facturacion-tab">
-                  <h2 class="mb-3">Detalles de Facturación</h2>
-                  <p class="lead">This is the contact tab content.</p>
+                  <form id="datos-pago" class="form-pago">
+                    <p>Método de pago</p>
+                    <div class="form-floating mb-3">
+                      <input type="number" class="form-control" id="tarjetaCliente" placeholder="1234 5678 9012 3456">
+                      <label for="tarjetaCliente">Número de tarjeta</label>
+                    </div>
+                    <div class="row">
+                       <div class="col-4">
+                        <div class="form-floating mb-3">
+                          <input type="month" class="form-control" id="expiraciontarjetaCliente" placeholder="MM/YYYY">
+                          <label for="expiraciontarjetaCliente">Fecha de exp</label>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="cvcCliente" placeholder="000">
+                          <label for="cvcCliente">CVC</label>
+                        </div>
+                      </div>
+                    </div><!-- cierro row-->
+                  </form>
+                </div><!-- cierro tab -->
+              
+              </div> <!-- cierro tab content -->
+            </div> <!-- cierro modal body-->
+            <div class="modal-footer pt-3 pb-5 d-block">
+              <div id="resumenCarrito" class="d-flex justify-content-end mb-3 resumen-carrito">
+                <p class="small mx-4 mb-0 pt-1 tiempo-preparacion d-none">Tiempo de preparación: <span id="tiempo-preparacion-calculado">0</span></p>
+                <p class="h5 color-primary text-right">Total: <span id="sumaPrecioTotal">$0</span></p>
+              </div>
+              <div id="accionesCarrito" class="d-flex justify-content-between actions">
+                <button id="btn-vaciar" class="btn btn-link btn-vaciar btn-sm"><i class="bi bi-trash3"></i> Vaciar Carrito</button>
+                <div class="actions-group">
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">Seguir comprando</button>
+                  <button id="btnContinuar" type="button" class="btn btn-primary btn-sm"><span id="buttonContinuarTextContent">Continuar</span> <i class="bi bi-arrow-right-short"></i></button>
                 </div>
               </div>
-            </div>
+            </div><!-- cierro footer total -->
           </div>
         </div>
       </div> <!-- cierro modal carrito -->
@@ -377,6 +470,25 @@
 
       
     </div><!-- cierro container-->
+
+
+
+    <!-- modal de confirmacion -->
+    <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalConfirmacionLabel">¡Compra realizada con éxito! <i class="bi bi-bag-check"></i></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body" id="detalleConfirmacion"></div>
+          <div class="modal-footer pb-0">
+            <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal" id="cerrarModalConfirmacionCompra">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- termina modal de confirmacion -->
 
 
         <!-- productos destacados -->
