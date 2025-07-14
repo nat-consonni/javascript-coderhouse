@@ -24,6 +24,15 @@ fetch('./data/productos.json')
 
 .catch(err => console.error('Error al cargar JSON:', err));
 
+//------------------------------------------------------------
+// Buscar producto por id
+function buscarProductoPorId(id) {
+  for (const tienda of datosApp.tiendas) {
+    const prod = tienda.productos.find(p => p.id === id);
+    if (prod) return { ...prod, tienda: tienda.nombre };
+  }
+  return null;
+}
 
 // ---------------------------------------------------------------------------------------------------
 //
@@ -439,4 +448,5 @@ document.querySelector('#btnContinuar').addEventListener('click', () => {
   }
 
 }); // end Proceso de compra
+
 
