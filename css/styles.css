@@ -190,6 +190,13 @@ a:hover {
   color: rgb(204, 102.4, 0);
 }
 
+.swal2-confirm.swal2-styled {
+  background-color: #FF8000;
+}
+.swal2-confirm.swal2-styled:hover {
+  background-color: rgb(204, 102.4, 0);
+}
+
 .form-control {
   font-size: 0.9rem;
 }

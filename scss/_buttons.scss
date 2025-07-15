@@ -55,3 +55,11 @@
 .btn-link:hover{
     color: $color-accent-dark;
 }
+
+// Sweet alert
+.swal2-confirm.swal2-styled{
+    background-color: $color-accent;
+    &:hover{
+        background-color: $color-accent-dark;
+    }
+}

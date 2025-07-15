@@ -432,7 +432,13 @@ document.querySelector('#btnContinuar').addEventListener('click', () => {
 
       document.querySelector('#buttonContinuarTextContent').textContent = 'Finalizar compra'; // cambio el lable del boton
     }else{ // y los datos de envio NO estan completos
-      alert("Debes completar los datos de envío para proceder");
+      Swal.fire({
+        icon: 'warning',
+        title: 'Datos incompletos',
+        text: 'Debes completar los datos de envío para proceder',
+        confirmButtonText: 'Ok'
+      });
+
       document.getElementById('facturacion-tab').classList.add('disabled'); // desactivo el boton
     }
   }else if( tabDatosPago.classList.contains('active')){ // si la tab 3 está activa
@@ -440,7 +446,13 @@ document.querySelector('#btnContinuar').addEventListener('click', () => {
     if(validarFormulario(camposPago)){ // y el formlario de pago esta completo
       mostrarResumenCompra(); // mostrar resumen de compra
     }else{
-      alert("Completa los datos de pago para finalizar la compra");
+      Swal.fire({
+        icon: 'warning',
+        title: 'Datos incompletos',
+        text: 'Debes completar los datos de pago para completar la compra',
+        confirmButtonText: 'Ok'
+      });
+
     }
   }
 
