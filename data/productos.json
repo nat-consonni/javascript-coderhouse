@@ -73,7 +73,7 @@
         },
         {
           "id": "db17ff85-08da-47e7-961a-326a57d1d48c",
-          "nombre": "Fideos largos",
+          "nombre": "Fideos de cristal",
           "marca": "Tropical",
           "regiones_preferencia": [
             "CentroAmerica",
@@ -140,18 +140,21 @@
         },
         {
           "id": "868c2b5c-034f-4e50-9315-0ca68258dd9f",
-          "nombre": "Leche en polvo",
-          "marca": "Santa Rosa",
+          "nombre": "Leche de coco con 18% de m.g.",
+          "marca": "Flying Goose",
           "regiones_preferencia": [
             "Venezuela",
-            "Uruguay",
-            "CentroAmerica"
+            "CentroAmerica",
+            "Asia",
+            "Tailandia",
+            "Filipinas",
+            "Indonesia"
           ],
           "disponible": true,
           "cantidad": 31,
-          "precio": 169.01,
+          "precio": 169,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/868c2b5c-034f-4e50-9315-0ca68258dd9f/300/300"
+          "imagen": "../img/products/868c2b5c-034f-4e50-9315-0ca68258dd9f.jpg"
         },
         {
           "id": "599dd87d-e9a6-415d-a43f-978299a566a8",
@@ -182,18 +185,19 @@
         },
         {
           "id": "e3c4916f-cd5b-4f5c-88a7-a3b7c93f84d6",
-          "nombre": "Leche en polvo",
-          "marca": "La Italiana",
+          "nombre": "Leche de coco ligera con 6% de m.g.",
+          "marca": "Flying Goose",
           "regiones_preferencia": [
             "CentroAmerica",
-            "Europa",
-            "Venezuela"
+            "Panama",
+            "Tailandia",
+            "Indonesia"
           ],
           "disponible": true,
           "cantidad": 4,
-          "precio": 194.23,
+          "precio": 194,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/e3c4916f-cd5b-4f5c-88a7-a3b7c93f84d6/300/300"
+          "imagen": "../img/products/e3c4916f-cd5b-4f5c-88a7-a3b7c93f84d6.jpg"
         },
         {
           "id": "d9b10f44-2beb-4dd2-bcc2-0a1dd2654f8e",
@@ -211,18 +215,18 @@
         },
         {
           "id": "45b75eda-9395-4fd4-8718-337862438e6b",
-          "nombre": "Leche en polvo",
-          "marca": "Goya",
+          "nombre": "Leche de coco 22%",
+          "marca": "Chaokoh",
           "regiones_preferencia": [
-            "Venezuela",
-            "Europa",
-            "CentroAmerica"
+            "Panama",
+            "Asia",
+            "Tailandia"
           ],
           "disponible": false,
           "cantidad": 22,
-          "precio": 325.07,
+          "precio": 225,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/45b75eda-9395-4fd4-8718-337862438e6b/300/300"
+          "imagen": "../img/products/45b75eda-9395-4fd4-8718-337862438e6b.jpg"
         },
         {
           "id": "f21816bb-9677-42fe-bd8f-b126128c758a",
@@ -268,21 +272,24 @@
         },
         {
           "id": "1f8971eb-7ff5-40e2-902f-0e9a4960c928",
-          "nombre": "Leche en polvo",
-          "marca": "Tropical",
+          "nombre": "Leche de coco",
+          "marca": "Natco",
           "regiones_preferencia": [
-            "Uruguay",
-            "Venezuela"
+            "Asia",
+            "Indonesia",
+            "Filipinas",
+            "Tailandia"
+
           ],
           "disponible": true,
           "cantidad": 75,
           "precio": 198,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/1f8971eb-7ff5-40e2-902f-0e9a4960c928/300/300"
+          "imagen": "../img/products/1f8971eb-7ff5-40e2-902f-0e9a4960c928.jpg"
         },
         {
           "id": "4aea402a-0129-41ef-bf44-1739000fa279",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Nestlé",
           "regiones_preferencia": [
             "CentroAmerica",
@@ -617,16 +624,18 @@
         },
         {
           "id": "2f24a594-352c-4f11-8e4e-02add496ea78",
-          "nombre": "Leche en polvo",
-          "marca": "Finca",
+          "nombre": "Leche de coco 17.5% m.g.",
+          "marca": "Aroy-D",
           "regiones_preferencia": [
-            "Europa"
+            "Asia",
+            "Tailandia",
+            "Indonesia"
           ],
           "disponible": false,
           "cantidad": 25,
-          "precio": 645.85,
+          "precio": 312,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/2f24a594-352c-4f11-8e4e-02add496ea78/300/300"
+          "imagen": "../img/products/2f24a594-352c-4f11-8e4e-02add496ea78.jpg"
         },
         {
           "id": "9b38cc13-b0a5-46f0-8e69-a8bb57ab78a6",
@@ -673,7 +682,7 @@
         },
         {
           "id": "e62501cc-9b6d-4338-b345-42a4be023030",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Goya",
           "regiones_preferencia": [
             "Uruguay"
@@ -686,7 +695,7 @@
         },
         {
           "id": "3418b233-b622-4265-b5ab-f0124ad4fbfe",
-          "nombre": "Fideos largos",
+          "nombre": "Fideos de cristal",
           "marca": "DelMonte",
           "regiones_preferencia": [
             "Europa"
@@ -785,7 +794,7 @@
         },
         {
           "id": "534698d1-89ae-4c64-a3cf-cb612635bd41",
-          "nombre": "Fideos largos",
+          "nombre": "Fideos de cristal",
           "marca": "Goya",
           "regiones_preferencia": [
             "Uruguay",
@@ -812,7 +821,7 @@
         },
         {
           "id": "c9bf9852-67b8-440b-8b70-f04313602e52",
-          "nombre": "Fideos largos",
+          "nombre": "Fideos de cristal",
           "marca": "Finca",
           "regiones_preferencia": [
             "Venezuela",
@@ -918,7 +927,7 @@
         },
         {
           "id": "67e80f51-bc5d-4835-a9d7-fb7f3b844522",
-          "nombre": "Fideos largos",
+          "nombre": "Fideos de cristal",
           "marca": "Tropical",
           "regiones_preferencia": [
             "CentroAmerica",
@@ -1351,7 +1360,7 @@
       "productos": [
         {
           "id": "ece75a8d-7f18-4e9e-9e12-82e5190f6965",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Goya",
           "regiones_preferencia": [
             "Uruguay"
@@ -1420,7 +1429,7 @@
         },
         {
           "id": "65e8c299-b9f0-480b-9e0a-cc8b077cf640",
-          "nombre": "Fideos largos",
+          "nombre": "Fideos de cristal",
           "marca": "Finca",
           "regiones_preferencia": [
             "Venezuela",
@@ -1900,7 +1909,7 @@
         },
         {
           "id": "9b4a806d-2171-48f9-a9c4-8bfa2190d866",
-          "nombre": "Fideos largos",
+          "nombre": "Fideos de cristal",
           "marca": "DelMonte",
           "regiones_preferencia": [
             "Europa"
@@ -2221,312 +2230,317 @@
       "productos": [
         {
           "id": "64752859-0219-405f-b704-98b9d017aa27",
-          "nombre": "Conserva de duraznos",
-          "marca": "Borges",
+          "nombre": "Aceite de sésamo",
+          "marca": "Kadoya",
           "regiones_preferencia": [
-            "CentroAmerica",
-            "Europa"
+            "China",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 47,
-          "precio": 752.66,
+          "precio": 452,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/64752859-0219-405f-b704-98b9d017aa27/300/300"
+          "imagen": "../img/products/64752859-0219-405f-b704-98b9d017aa27.jpg"
         },
         {
           "id": "558ee348-9082-4bcd-a19f-072bb3388462",
-          "nombre": "Harina de maíz",
-          "marca": "Goya",
+          "nombre": "Jengibre en trozos en almíbar",
+          "marca": "Thai Dancer",
           "regiones_preferencia": [
-            "Europa"
+            "China",
+            "Asia",
+            "Tailandia"
           ],
           "disponible": true,
           "cantidad": 67,
-          "precio": 740.25,
+          "precio": 240,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/558ee348-9082-4bcd-a19f-072bb3388462/300/300"
+          "imagen": "../img/products/558ee348-9082-4bcd-a19f-072bb3388462.jpg"
         },
         {
           "id": "49a9d3b3-b4b6-475b-9172-97ce6eb59f1b",
-          "nombre": "Leche en polvo",
+          "nombre": "Jengibre en pasta",
           "marca": "Goya",
           "regiones_preferencia": [
-            "Uruguay"
+            "China",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 89,
-          "precio": 335.44,
+          "precio": 335,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/49a9d3b3-b4b6-475b-9172-97ce6eb59f1b/300/300"
+          "imagen": "../img/products/49a9d3b3-b4b6-475b-9172-97ce6eb59f1b.jpg"
         },
         {
           "id": "13f90375-433e-44aa-8508-9b895baf185f",
-          "nombre": "Frijoles negros",
-          "marca": "Finca",
+          "nombre": "Brotes de bambú en mitades",
+          "marca": "Diamond",
           "regiones_preferencia": [
-            "Venezuela",
-            "Europa",
-            "Uruguay"
+            "China",
+            "Asia",
+            "Japón"
           ],
           "disponible": true,
           "cantidad": 46,
-          "precio": 121.29,
+          "precio": 121,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/13f90375-433e-44aa-8508-9b895baf185f/300/300"
+          "imagen": "../img/products/13f90375-433e-44aa-8508-9b895baf185f.jpg"
         },
         {
           "id": "7189ad6f-ab1a-47e4-8ca8-fb714176dbdb",
-          "nombre": "Frijoles negros",
-          "marca": "Finca",
+          "nombre": "Brotes de soja",
+          "marca": "Diamond",
           "regiones_preferencia": [
-            "Europa"
+            "China",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 10,
-          "precio": 510.53,
+          "precio": 510,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/7189ad6f-ab1a-47e4-8ca8-fb714176dbdb/300/300"
+          "imagen": "../img/products/7189ad6f-ab1a-47e4-8ca8-fb714176dbdb.jpg"
         },
         {
           "id": "ef3228f5-75da-4c21-bcdb-42b0aa0ed14f",
-          "nombre": "Café molido",
-          "marca": "Goya",
+          "nombre": "Ajo picado",
+          "marca": "LKK",
           "regiones_preferencia": [
-            "Uruguay",
-            "CentroAmerica"
+            "China",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 74,
-          "precio": 388.19,
+          "precio": 388,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/ef3228f5-75da-4c21-bcdb-42b0aa0ed14f/300/300"
+          "imagen": "../img/products/ef3228f5-75da-4c21-bcdb-42b0aa0ed14f.jpg"
         },
         {
           "id": "d6835d85-dc6d-4e15-bbf5-6a582bfcb159",
-          "nombre": "Café molido",
-          "marca": "Goya",
+          "nombre": "Brotes de bambú en tiras",
+          "marca": "Royal Orient",
           "regiones_preferencia": [
-            "Uruguay",
-            "CentroAmerica"
+            "China",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 76,
-          "precio": 161.4,
+          "precio": 161,
           "destacado": true,
-          "imagen": "https://picsum.photos/seed/d6835d85-dc6d-4e15-bbf5-6a582bfcb159/300/300"
+          "imagen": "../img/products/d6835d85-dc6d-4e15-bbf5-6a582bfcb159.jpg"
         },
         {
           "id": "e7c74287-b50f-46ea-9303-a0bc58948fa6",
-          "nombre": "Té negro",
-          "marca": "Finca",
+          "nombre": "Pasta para arroz frito cantonés",
+          "marca": "Asian Home Gourmet",
           "regiones_preferencia": [
-            "Europa"
+            "Asia",
+            "China"
           ],
           "disponible": true,
           "cantidad": 82,
-          "precio": 279.58,
+          "precio": 279,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/e7c74287-b50f-46ea-9303-a0bc58948fa6/300/300"
+          "imagen": "../img/products/e7c74287-b50f-46ea-9303-a0bc58948fa6.jpg"
         },
         {
           "id": "e8187132-59a6-4222-a409-6605790b8a58",
-          "nombre": "Frijoles negros",
+          "nombre": "Salsa para saltear con jengibre y chile estilo Sichuan",
           "marca": "Finca",
           "regiones_preferencia": [
-            "Venezuela",
-            "Europa",
-            "Uruguay"
+            "China",
+            "Japón",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 16,
-          "precio": 435.8,
+          "precio": 435,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/e8187132-59a6-4222-a409-6605790b8a58/300/300"
+          "imagen": "../img/products/e8187132-59a6-4222-a409-6605790b8a58.jpg"
         },
         {
           "id": "51b02bff-2a27-4538-b811-b75e21a14e28",
-          "nombre": "Café molido",
-          "marca": "Goya",
+          "nombre": "Mezcla para Chow Mein cantonés",
+          "marca": "Asian Home Gourmet",
           "regiones_preferencia": [
-            "Uruguay",
-            "CentroAmerica"
+            "China",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 2,
-          "precio": 377.01,
+          "precio": 377,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/51b02bff-2a27-4538-b811-b75e21a14e28/300/300"
+          "imagen": "../img/products/51b02bff-2a27-4538-b811-b75e21a14e28.jpg"
         },
         {
           "id": "9832ef3a-2eb7-47aa-a6d5-e015e16b05a7",
-          "nombre": "Chocolatina",
-          "marca": "Colonia",
+          "nombre": "Anís estrellado",
+          "marca": "TRS",
           "regiones_preferencia": [
             "Venezuela"
           ],
           "disponible": true,
           "cantidad": 79,
-          "precio": 394.23,
+          "precio": 394,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/9832ef3a-2eb7-47aa-a6d5-e015e16b05a7/300/300"
+          "imagen": "../img/products/9832ef3a-2eb7-47aa-a6d5-e015e16b05a7.jpg"
         },
         {
           "id": "9a3d6756-0013-4131-ae99-7a158819789c",
-          "nombre": "Arroz blanco",
-          "marca": "Colonia",
+          "nombre": "Canela molida",
+          "marca": "Terre Exotique",
           "regiones_preferencia": [
-            "Venezuela",
-            "CentroAmerica",
-            "Uruguay"
+            "Sri Lanka",
+            "China",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 81,
-          "precio": 473.76,
+          "precio": 473,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/9a3d6756-0013-4131-ae99-7a158819789c/300/300"
+          "imagen": "../img/products/9a3d6756-0013-4131-ae99-7a158819789c.jpg"
         },
         {
           "id": "f0210de9-f867-4506-8791-22abdb78d102",
-          "nombre": "Mostaza",
-          "marca": "Tradición",
+          "nombre": "Mezcla para pato asado",
+          "marca": "Lobo",
           "regiones_preferencia": [
-            "Venezuela",
-            "Europa",
-            "CentroAmerica"
+            "China",
+            "Asia",
+            "Japón"
           ],
           "disponible": false,
           "cantidad": 59,
-          "precio": 640.89,
+          "precio": 640,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/f0210de9-f867-4506-8791-22abdb78d102/300/300"
+          "imagen": "../img/products/f0210de9-f867-4506-8791-22abdb78d102.jpg"
         },
         {
           "id": "35237700-6a3b-4890-94fc-8de671a04f96",
-          "nombre": "Pan lactal",
-          "marca": "Tradición",
+          "nombre": "Salsa de pimienta negra para saltear",
+          "marca": "Lobo",
           "regiones_preferencia": [
-            "Uruguay",
-            "CentroAmerica",
-            "Europa"
+            "China",
+            "Asia",
+            "Japón"
           ],
           "disponible": true,
           "cantidad": 11,
-          "precio": 165.44,
+          "precio": 165,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/35237700-6a3b-4890-94fc-8de671a04f96/300/300"
+          "imagen": "../img/products/35237700-6a3b-4890-94fc-8de671a04f96.jpg"
         },
         {
           "id": "5277b358-c637-41f3-b7ff-636976993a21",
-          "nombre": "Leche en polvo",
-          "marca": "Goya",
+          "nombre": "Sazonador sabor a setas shiitake",
+          "marca": "LKK",
           "regiones_preferencia": [
-            "Uruguay",
-            "CentroAmerica",
-            "Europa"
+            "China",
+            "Asia",
+            "Japón"
           ],
           "disponible": false,
           "cantidad": 49,
-          "precio": 588.59,
+          "precio": 588,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/5277b358-c637-41f3-b7ff-636976993a21/300/300"
+          "imagen": "../img/products/5277b358-c637-41f3-b7ff-636976993a21.jpg"
         },
         {
           "id": "29c35fac-b548-4f20-925a-1161e602e97b",
-          "nombre": "Yogur bebible",
-          "marca": "Santa Rosa",
+          "nombre": "Harina para dumplings esponjosos",
+          "marca": "Vin Vin",
           "regiones_preferencia": [
-            "Uruguay",
-            "Venezuela",
-            "Europa"
+            "China",
+            "Japón",
+            "Asia"
           ],
           "disponible": false,
           "cantidad": 10,
-          "precio": 524.55,
+          "precio": 524,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/29c35fac-b548-4f20-925a-1161e602e97b/300/300"
+          "imagen": "../img/products/29c35fac-b548-4f20-925a-1161e602e97b.jpg"
         },
         {
           "id": "c6c28d87-05fe-40ff-8161-c5c39a7929ff",
-          "nombre": "Manteca",
-          "marca": "Goya",
+          "nombre": "Harina de arroz",
+          "marca": "Farmer",
           "regiones_preferencia": [
-            "CentroAmerica"
+            "China"
           ],
           "disponible": true,
           "cantidad": 70,
-          "precio": 408.44,
+          "precio": 408,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/c6c28d87-05fe-40ff-8161-c5c39a7929ff/300/300"
+          "imagen": "../img/products/c6c28d87-05fe-40ff-8161-c5c39a7929ff.jpg"
         },
         {
           "id": "71046f26-779b-4b28-a9f7-b183ba0cfb27",
-          "nombre": "Jugo natural",
-          "marca": "Tradición",
+          "nombre": "Tallarines estilo chino ramen chuca soba",
+          "marca": "Miyakoichi",
           "regiones_preferencia": [
             "CentroAmerica",
             "Uruguay"
           ],
           "disponible": false,
           "cantidad": 44,
-          "precio": 305.3,
+          "precio": 305,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/71046f26-779b-4b28-a9f7-b183ba0cfb27/300/300"
+          "imagen": "../img/products/71046f26-779b-4b28-a9f7-b183ba0cfb27.jpg"
         },
         {
           "id": "507d1134-30e4-4d11-9e9d-ef3e09241671",
-          "nombre": "Mostaza",
-          "marca": "Colonia",
+          "nombre": "Noodles",
+          "marca": "BioAsia",
           "regiones_preferencia": [
-            "Venezuela"
+            "China"
           ],
           "disponible": true,
           "cantidad": 60,
-          "precio": 527.95,
+          "precio": 527,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/507d1134-30e4-4d11-9e9d-ef3e09241671/300/300"
+          "imagen": "../img/products/507d1134-30e4-4d11-9e9d-ef3e09241671.jpg"
         },
         {
           "id": "d322b650-ecf5-4cb7-a044-ad05191730ce",
-          "nombre": "Fideos largos",
-          "marca": "La Italiana",
+          "nombre": "Fideos de cristal",
+          "marca": "Diamond",
           "regiones_preferencia": [
-            "CentroAmerica",
-            "Europa"
+            "China",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 60,
-          "precio": 701.32,
+          "precio": 701,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/d322b650-ecf5-4cb7-a044-ad05191730ce/300/300"
+          "imagen": "../img/products/d322b650-ecf5-4cb7-a044-ad05191730ce.jpg"
         },
         {
           "id": "91ee9fdb-fa76-4496-ae87-170b775f2c30",
-          "nombre": "Sopa instantánea",
-          "marca": "Borges",
+          "nombre": "Arroz glutinoso negro",
+          "marca": "Royal Tiger",
           "regiones_preferencia": [
-            "Europa",
-            "Uruguay",
-            "CentroAmerica"
+            "China",
+            "Asia",
+            "Japón"
           ],
           "disponible": true,
           "cantidad": 1,
-          "precio": 429.02,
+          "precio": 429,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/91ee9fdb-fa76-4496-ae87-170b775f2c30/300/300"
+          "imagen": "../img/products/91ee9fdb-fa76-4496-ae87-170b775f2c30.jpg"
         },
         {
           "id": "6ed2d53c-5c44-4623-9574-3c5d84e7ef73",
-          "nombre": "Azúcar rubia",
-          "marca": "Tropical",
+          "nombre": "Tallarines de trigo para Hot Pot",
+          "marca": "MLD",
           "regiones_preferencia": [
-            "Uruguay",
-            "Europa"
+            "China",
+            "Asia"
           ],
           "disponible": true,
           "cantidad": 18,
-          "precio": 308.71,
+          "precio": 308,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/6ed2d53c-5c44-4623-9574-3c5d84e7ef73/300/300"
+          "imagen": "../img/products/6ed2d53c-5c44-4623-9574-3c5d84e7ef73.jpg"
         },
         {
           "id": "24d075f6-ec73-4a23-858a-037aca4298a9",
@@ -2652,17 +2666,17 @@
       "productos": [
         {
           "id": "cf283cf9-21c2-4c4c-a8c6-adb5bbe7151c",
-          "nombre": "Fideos largos",
-          "marca": "La Italiana",
+          "nombre": "Fritos Original",
+          "marca": "Fritos",
           "regiones_preferencia": [
-            "CentroAmerica",
-            "Europa"
+            "Estados Unidos",
+            "América del Norte"
           ],
           "disponible": true,
           "cantidad": 30,
-          "precio": 706.58,
+          "precio": 706,
           "destacado": false,
-          "imagen": "https://picsum.photos/seed/cf283cf9-21c2-4c4c-a8c6-adb5bbe7151c/300/300"
+          "imagen": "../img/products/cf283cf9-21c2-4c4c-a8c6-adb5bbe7151c.jpg"
         },
         {
           "id": "d9d8a1c7-a526-4bd9-b62d-19122d02487c",
@@ -2794,7 +2808,7 @@
         },
         {
           "id": "06665998-d888-46f2-a582-efc38b4c2ca5",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Finca",
           "regiones_preferencia": [
             "Venezuela",
@@ -2808,7 +2822,7 @@
         },
         {
           "id": "5ea39348-78c9-482c-92f2-76b0604e7f0b",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "La Italiana",
           "regiones_preferencia": [
             "Uruguay"
@@ -2850,7 +2864,7 @@
         },
         {
           "id": "20cb4c6a-183a-4dd6-8830-42bf74eedb19",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Finca",
           "regiones_preferencia": [
             "CentroAmerica",
@@ -3108,7 +3122,7 @@
         },
         {
           "id": "63cc528c-bdda-44e4-857b-c806e4ebad36",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Nestlé",
           "regiones_preferencia": [
             "CentroAmerica",
@@ -3138,7 +3152,7 @@
         },
         {
           "id": "fb3f964f-0828-4158-a81c-abb62b9f3106",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Nestlé",
           "regiones_preferencia": [
             "CentroAmerica",
@@ -3196,7 +3210,7 @@
         },
         {
           "id": "e87df825-fc92-4073-8873-11156d9d2a2f",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "La Italiana",
           "regiones_preferencia": [
             "Uruguay"
@@ -3293,7 +3307,7 @@
         },
         {
           "id": "65eba3b8-1f9b-44d0-bdee-bf641071ea64",
-          "nombre": "Fideos largos",
+          "nombre": "Fideos de cristal",
           "marca": "Tropical",
           "regiones_preferencia": [
             "Uruguay",
@@ -3308,7 +3322,7 @@
         },
         {
           "id": "f6b6d86a-9bdc-421b-bc60-b4192176ee94",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Tradición",
           "regiones_preferencia": [
             "CentroAmerica",
@@ -3461,7 +3475,7 @@
         },
         {
           "id": "22733f2c-5b7a-49b0-a594-6e99a4948dc0",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Tropical",
           "regiones_preferencia": [
             "CentroAmerica",
@@ -3587,7 +3601,7 @@
         },
         {
           "id": "be8087c3-4fca-497b-846d-81afde6e7551",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Nestlé",
           "regiones_preferencia": [
             "CentroAmerica",
@@ -3756,7 +3770,7 @@
         },
         {
           "id": "0f404cf2-9a38-42a4-8a62-4f94c313a2bf",
-          "nombre": "Mayonesa",
+          "nombre": "Salsa de Soja",
           "marca": "Colonia",
           "regiones_preferencia": [
             "Europa",
@@ -4271,7 +4285,7 @@
         },
         {
           "id": "b5847c07-2c43-4e97-8ca3-13071cee53c3",
-          "nombre": "Fideos largos",
+          "nombre": "Fideos de cristal",
           "marca": "Nestlé",
           "regiones_preferencia": [
             "Uruguay",
