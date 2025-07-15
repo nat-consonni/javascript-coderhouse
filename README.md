@@ -15,40 +15,30 @@ Desarrollar una aplicación web interactiva que simule la búsqueda y localizaci
 
 ### Objetivos específicos:
 
-- Implementar una estructura base utilizando HTML, CSS y JavaScript.
+- Utilizar datos remotos o simularlos con JSON (probé varios creadores gratiuitos online de JSON, pero ninguno se adaptaba a este simulador específico; los que eran de productos eran muy generales y se perdía la idea de lo que es este simulador).
 - Generar dinámicamente todos los elementos visuales e interacciones mediante JavaScript.
+- Uso de las herramientas más importantes de JS, y librerías externas
 - Simular procesos de negocio como la búsqueda por nombre, marca o país de preferencia.
-- Documentar claramente el proyecto y proporcionar instrucciones en este archivo README.md.
+- Tiene que ser 100% funcional y con la lógica de negocio de tu proyecto elegido 
 
 ---
 
-# Pre Entrega 2 - Estructura del simulador
 
-## Archivos incluidos:
-- index.html - etructura del simulador
-- 404.html - a donde redirige los links de las páginas aún no creadas
-- README.md
--  js/
--  - datos.js - base de datos simulada con tiendas y productos
--  - app.js - lógica de interacción y funciones del simulador
-- css/
-- - styles.css - compilado automáticamente
-- scss/
-- - [parciales de SASS]
-- img/
-- -    
-
-
-## Contenidos aplicados en esta entrega
+## Contenidos aplicados a la entrega final
 
 | Requisito                                                                                                                      | Aplicado |
 |--------------------------------------------------------------------------------------------------------------------------------|----------|
-| Modificar la estructura anterior, integrando JavaScript mediante el uso de DOM y Eventos                                       | ✅       |
-| Circuito de interacción completo de la lógica de tu aplicación web                                                             | ✅       |
+| Elimina console.log y derivados                                                                                                | ✅       |
+| Reemplaza alert, prompt, confirm por una librería JS                                                                           | ✅       |
 | Guardar objetos/arrays de objetos en localstorage para dejar disponible los datos agregados por el usuario                     | ✅       |
-| Termina de diseñar la estética visual necesaria en tu webapp con CSS y/o un framework CSS                                      | ✅       |
-| Los algoritmos de JS deben ser invocados desde HTML, e interactuar con el contenido web, creando HTML                          | ✅       |
-| Elimina toda interacción con la Consola JS, convirtiendo esta interacción en el DOM del HTML                                   | ✅       |
+| Se simula uno o más flujo de trabajo en termino de entrada-procesamiento-salida y no se advierten errores de cómputo.          | 🚧       |
+| Se capturan entradas empleando inputs y eventos adecuados.                                                                     | ✅       |
+| Las salidas son coherentes en relación a los datos ingresados y se visualizan en el HTML de forma asíncrona.                   | ✅       |
+| Se declaran funciones con parámetros para definir instrucciones con una tarea específica.                                      | ✅       |
+| Se definen objetos con propiedades y métodos relevantes al contexto.                                                           | ✅       |
+| Se emplean arrays para agrupar valores y objetos de forma dinámica.                                                            | ✅       |
+| Se definen el código JavaScript en un archivo .js, referenciándolo correctamente desde el HTML                                 | ✅       |
+| Los nombres de variables. funciones y objetos son significativos para el contexto.                                             | ✅       |
 ---
 
 

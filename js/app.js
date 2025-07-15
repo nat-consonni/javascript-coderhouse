@@ -374,19 +374,18 @@ function mostrarResumenCompra() {
   const datosEnvio = JSON.parse(localStorage.getItem('datosEnvio')) || {};
   const cantidadTotal = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
   const totalPrecio = carrito.reduce((acc, prod) => acc + (prod.precio * prod.cantidad), 0);
-  const tiempo = calcularTiempoPreparacion(carrito, tiendas);
+  //const tiempo = calcularTiempoPreparacion(carrito, tienda);
 
-  console.log(`Tiempo total de preparación: ${tiempo} minutos`);
+  //console.log(`Tiempo total de preparación: ${tiempo} minutos`);
 
   //const horas = Math.floor(tiempo / 60);
   //const minutos = tiempo % 60;
-  const tiempoFormateado = isNaN(tiempo) ? "No disponible" : `${tiempo} min`; //`${horas > 0 ? horas + 'h ' : ''}${minutos} min`;
+  //const tiempoFormateado = isNaN(tiempo) ? "No disponible" : `${tiempo} min`; //`${horas > 0 ? horas + 'h ' : ''}${minutos} min`;
 
   const mensajeHTML = `
     <p>Gracias <strong>${datosEnvio.nombreCliente || 'Cliente'}</strong>, tu compra ha sido registrada con éxito!</p>
     <p><i class="bi bi-box2-heart"></i> <strong>${cantidadTotal}</strong> producto(s)</p>
     <p><i class="bi bi-coin"></i> Total: <strong>$${totalPrecio.toFixed(2)}</strong></p>
-    <p><i class="bi bi-hourglass-split"></i> Tiempo estimado de preparación: <strong>${tiempoFormateado}</strong></p>
     <hr>
     <p><strong>Dirección de envío:</strong><br>
     ${datosEnvio.calleCliente || ''} ${datosEnvio.numeroCliente || ''}, ${datosEnvio.ciudadCliente || ''}, ${datosEnvio.departamentoCliente || ''} - CP ${datosEnvio.cpCliente || ''}</p>
