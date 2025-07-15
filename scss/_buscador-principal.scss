@@ -27,3 +27,18 @@
         padding: 0 0.8rem;
     }
 }
+
+
+// Paginación resultados busqueda
+.active>.page-link,
+.page-link.active{
+    background-color: $color-accent;
+    border-color: $color-accent;
+}
+.page-link{
+    color: $color-accent;
+    &:hover{
+        color: $color-accent-dark;
+        text-decoration: none;
+    }
+}

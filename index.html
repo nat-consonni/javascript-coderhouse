@@ -58,6 +58,18 @@
 
   <!-- Seccion principal -->
   <main>
+    <div id="wrapperResultadoBusqueda" class="container wrapper-resultados-busqueda pt-3 border-top d-none">
+      <div class="buscador-header d-flex justify-content-between">
+        <h6 class="pt-2">Resultados de la búsqueda (<span id="cantidadResultados">0</span>):</h6>
+        <button id="btn-limpiar" class="btn btn-link color-accent btn-sm">Limpiar búsqueda</button>
+      </div><!-- termina buscador-header -->
+      <div id="resultados-busqueda" class="row my-3"></div>
+      <nav class="wrapper-paginacion-resultados mb-5">
+        <ul id="paginacion-resultados" class="pagination justify-content-center mt-4"></ul>
+      </nav>
+    </div><!-- termina wrapper-resultados-busqueda -->
+    
+
 
     <div class="hero py-5">
       <div class="container py-5">
@@ -283,7 +295,7 @@
 
 
     <!-- publi -->
-     <div class="container py-5 mb-5">
+     <div class="container py-5">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
           <div class="banner banner-bg-1 p-4 rounded-1">
@@ -302,25 +314,10 @@
           </div>
         </div>
       </div>
-     </div>
-    <!-- cierro publi-->
+     </div><!-- cierro publi-->
 
-    <!-- contenido bajo el hero-->
-    <div class="container py-4">
 
-      <!-- resultado de busqueda -->
-      <section aria-label="Resultados de búsqueda" class="resultado-busqueda mb-5 d-none" id="resultados-busqueda-wrapper">
-        <h4 class="text-center font-brand">Resultados</h4>
-        <p id="sin-resultados" class="text-center d-none">No se encontraron productos.</p>
-        <div id="resultados"  class="row justify-content-center my-4">
-
-        </div>
-          
-      </section><!-- resultado de busqueda -->
-
-      <!-- PROBANDO NUEVO CARRITO -->
-
-      <!-- Button trigger modal -->
+      <!-- Button trigger carrito -->
       <button type="button" id="btn-carrito-flotante" class="btn btn-primary rounded-circle shadow-lg btn-carrito-flotante" data-bs-toggle="modal" data-bs-target="#modalCarrito" title="Ver carrito">
         <i class="bi bi-cart-fill fs-4"></i>
       </button>
@@ -450,7 +447,7 @@
               
               </div> <!-- cierro tab content -->
             </div> <!-- cierro modal body-->
-            <div class="modal-footer pt-3 pb-5 d-block">
+            <div class="modal-footer pt-3 d-block">
               <div id="resumenCarrito" class="d-flex justify-content-end mb-3 resumen-carrito">
                 <p class="small mx-4 mb-0 pt-1 tiempo-preparacion d-none">Tiempo de preparación: <span id="tiempo-preparacion-calculado">0</span></p>
                 <p class="h5 color-primary text-right">Total: <span id="sumaPrecioTotal">$0</span></p>
@@ -489,161 +486,6 @@
       </div>
     </div>
     <!-- termina modal de confirmacion -->
-
-
-        <!-- productos destacados -->
-    <div class="container pb-5">
-      <h4 class="mb-4">Productos destacados</h4>
-      <div class="row">
-        <div class="col-2">
-          <div class="card-producto border p-3 rounded-1 h-100">
-            <div class="img-wrapper mb-3">
-              <img src="/img/products/SDM-010.webp" class="d-block w-100" alt="...">
-            </div>
-            <p class="region">Asia, Brasil</p>
-            <p class="h6">Leche de coco</p>
-            <div class="detalles-venta">
-              <a class="nombre-tienda" href="#">Sabores del Mundo</a>
-              <p>También en: <a href="#">1 tienda</a></p>
-            </div>
-            <div class="footer d-flex align-middle justify-content-between">
-              <p class="d-flex mb-0 price">$ 200 <span>c/u</span></p>
-              <div class="agregar d-flex">
-                <button class="btn btn-sm btn-primary" data-id="">Agregar</button>
-              </div>              
-              <div class="d-flex align-items-center justify-content-start gap-2 cantidad-group d-none" data-id="${item.id}">
-                <button class="btn btn-sm btn-outline-secondary btn-menos" data-id="${item.id}">−</button>
-                <span class="cantidad">1</span>
-                <button class="btn btn-sm btn-outline-secondary btn-mas" data-id="${item.id}">+</button>
-              </div>
-            </div>    
-          </div> <!-- card-producto -->
-        </div><!-- cierro columna card producto-->
-        <div class="col-2">
-          <div class="card-producto border p-3 rounded-1 h-100">
-            <div class="img-wrapper mb-3">
-              <img src="/img/products/SDM-010.webp" class="d-block w-100" alt="...">
-            </div>
-            <p class="region">Europa, España</p>
-            <p class="h6">Jamón serrano</p>
-            <div class="detalles-venta">
-              <a class="nombre-tienda" href="#">Sabores del Mundo</a>
-              <p>También en: <a href="#">1 tienda</a></p>
-            </div>
-            <div class="footer d-flex align-middle justify-content-between">
-              <p class="d-flex mb-0 price">$ 200 <span>c/u</span></p>
-              <div class="agregar d-none">
-                <button class="btn btn-sm btn-primary" data-id="">Agregar</button>
-              </div>              
-              <div class="d-flex align-items-center justify-content-start gap-2 cantidad-group" data-id="${item.id}">
-                <button class="btn btn-sm btn-outline-secondary btn-menos" data-id="${item.id}"><i class="bi bi-trash3-fill"></i></button>
-                <span class="cantidad">1</span>
-                <button class="btn btn-sm btn-outline-secondary btn-mas" data-id="${item.id}">+</button>
-              </div>
-            </div>    
-          </div> <!-- card-destacados -->
-        </div><!-- cierro columna card destacados-->
-        <div class="col-2">
-          <div class="card-producto border p-3 rounded-1 h-100">
-            <div class="img-wrapper mb-3">
-              <img src="/img/products/SDM-010.webp" class="d-block w-100" alt="...">
-            </div>
-            <p class="region">España, Portugal</p>
-            <p class="h6">Jamón serrano</p>
-            <div class="detalles-venta">
-              <a class="nombre-tienda" href="#">Sabores del Mundo</a>
-              <p>También en: <a href="#">1 tienda</a></p>
-            </div>
-            <div class="footer d-flex align-middle justify-content-between">
-              <p class="d-flex mb-0 price">$ 200 <span>c/u</span></p>
-              <div class="agregar d-none">
-                <button class="btn btn-sm btn-primary" data-id="">Agregar</button>
-              </div>              
-              <div class="d-flex align-items-center justify-content-start gap-2 cantidad-group" data-id="${item.id}">
-                <button class="btn btn-sm btn-outline-secondary btn-menos" data-id="${item.id}">-</button>
-                <span class="cantidad">2</span>
-                <button class="btn btn-sm btn-outline-secondary btn-mas" data-id="${item.id}">+</button>
-              </div>
-            </div>    
-          </div> <!-- card-destacados -->
-        </div><!-- cierro columna card destacados-->
-        <div class="col-2">
-          <div class="card-producto border p-3 rounded-1 h-100">
-            <div class="img-wrapper mb-3">
-              <img src="/img/products/SDM-010.webp" class="d-block w-100" alt="...">
-            </div>
-            <p class="region">Asia, Brasil</p>
-            <p class="h6">Leche de coco</p>
-            <div class="detalles-venta">
-              <a class="nombre-tienda" href="#">Sabores del Mundo</a>
-              <p>También en: <a href="#">1 tienda</a></p>
-            </div>
-            <div class="footer d-flex align-middle justify-content-between">
-              <p class="d-flex mb-0 price">$ 200 <span>c/u</span></p>
-              <div class="agregar d-flex">
-                <button class="btn btn-sm btn-primary" data-id="">Agregar</button>
-              </div>              
-              <div class="d-flex align-items-center justify-content-start gap-2 cantidad-group d-none" data-id="${item.id}">
-                <button class="btn btn-sm btn-outline-secondary btn-menos" data-id="${item.id}">−</button>
-                <span class="cantidad">1</span>
-                <button class="btn btn-sm btn-outline-secondary btn-mas" data-id="${item.id}">+</button>
-              </div>
-            </div>    
-          </div> <!-- card-destacados -->
-        </div><!-- cierro columna card destacados-->
-        <div class="col-2">
-          <div class="card-producto border p-3 rounded-1 h-100">
-            <div class="img-wrapper mb-3">
-              <img src="/img/products/SDM-010.webp" class="d-block w-100" alt="...">
-            </div>
-            <p class="region">España, Portugal</p>
-            <p class="h6">Jamón serrano</p>
-            <div class="detalles-venta">
-              <a class="nombre-tienda" href="#">Sabores del Mundo</a>
-              <p>También en: <a href="#">1 tienda</a></p>
-            </div>
-            <div class="footer d-flex align-middle justify-content-between">
-              <p class="d-flex mb-0 price">$ 200 <span>c/u</span></p>
-              <div class="agregar d-none">
-                <button class="btn btn-sm btn-primary" data-id="">Agregar</button>
-              </div>              
-              <div class="d-flex align-items-center justify-content-start gap-2 cantidad-group" data-id="${item.id}">
-                <button class="btn btn-sm btn-outline-secondary btn-menos" data-id="${item.id}"><i class="bi bi-trash3-fill"></i></button>
-                <span class="cantidad">1</span>
-                <button class="btn btn-sm btn-outline-secondary btn-mas" data-id="${item.id}">+</button>
-              </div>
-            </div>    
-          </div> <!-- card-destacados -->
-        </div><!-- cierro columna card destacados-->
-        <div class="col-2">
-          <div class="card-producto border p-3 rounded-1 h-100">
-            <div class="img-wrapper mb-3">
-              <img src="/img/products/SDM-010.webp" class="d-block w-100" alt="...">
-            </div>
-            <p class="region">España, Portugal</p>
-            <p class="h6">Jamón serrano</p>
-            <div class="detalles-venta">
-              <a class="nombre-tienda" href="#">Sabores del Mundo</a>
-              <p>También en: <a href="#">1 tienda</a></p>
-            </div>
-            <div class="footer d-flex align-middle justify-content-between">
-              <p class="d-flex mb-0 price">$ 200 <span>c/u</span></p>
-              <div class="agregar d-none">
-                <button class="btn btn-sm btn-primary" data-id="">Agregar</button>
-              </div>              
-              <div class="d-flex align-items-center justify-content-start gap-2 cantidad-group" data-id="${item.id}">
-                <button class="btn btn-sm btn-outline-secondary btn-menos" data-id="${item.id}">-</button>
-                <span class="cantidad">10</span>
-                <button class="btn btn-sm btn-outline-secondary btn-mas" data-id="${item.id}">+</button>
-              </div>
-            </div>    
-          </div> <!-- card-producto -->
-        </div><!-- cierro columna card destacados-->
-      </div>
-    </div><!-- cierro productos destacados -->
-
-
-
 
   </main>
 

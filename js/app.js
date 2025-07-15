@@ -1,6 +1,6 @@
 let datosApp = {}; // variable global para guardar los datos
 
-// ---------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 // Cargar JSON una vez
 
 fetch('./data/productos.json')
@@ -24,7 +24,7 @@ fetch('./data/productos.json')
 
 .catch(err => console.error('Error al cargar JSON:', err));
 
-//------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 // Buscar producto por id
 function buscarProductoPorId(id) {
   for (const tienda of datosApp.tiendas) {
@@ -34,14 +34,14 @@ function buscarProductoPorId(id) {
   return null;
 }
 
-// ---------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 //
 // iniciar Tooltips
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 
-// ---------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 //
 // Función para mostrar destacados
 
@@ -91,7 +91,7 @@ function mostrarDestacados() {
 
 
 
-// ---------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 //
 // Variables para proceso de compra
 
@@ -107,7 +107,7 @@ const tabEnvioTab = document.getElementById("envio-tab");
 const tabFacturacionTab = document.getElementById("facturacion-tab");
 
 
-// ---------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 //
 // Agregar producto al carrito
 
@@ -261,7 +261,7 @@ function ocultarControlesCantidad(id) {
 
 
 
-// ---------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 //
 // Vaciar carrito
 btnVaciar.addEventListener('click', () => {
@@ -274,7 +274,7 @@ btnVaciar.addEventListener('click', () => {
 });
 
 
-// ---------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 //
 // Datos de envío
 
@@ -358,7 +358,7 @@ function calcularTiempoPreparacion(carrito, tiendas) {
 }
 
 
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 // Auto-guardar en localStorage si el usuario cambia un campo y sale de él
 camposEnvio.forEach(id => {
   const el = document.getElementById(id);
@@ -370,7 +370,7 @@ camposPago.forEach(id => {
 });
 
 
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 //
 // Resumen de compra para crear el modal de compra realizada
 function mostrarResumenCompra() {
@@ -410,7 +410,7 @@ document.querySelector('#cerrarModalConfirmacionCompra').addEventListener('click
 });  
 
 
-// ---------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------------------------------
 // Proceso de compra
 
 document.querySelector('#btnContinuar').addEventListener('click', () => {
@@ -450,3 +450,163 @@ document.querySelector('#btnContinuar').addEventListener('click', () => {
 }); // end Proceso de compra
 
 
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------
+//
+// Buscador
+
+// buscar luego de apretar el boton o apretar enter
+document.getElementById('btn-buscar').addEventListener('click', buscarProductos);
+document.getElementById('busqueda').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') buscarProductos();
+}); 
+
+const resultados_por_pagina = 12;
+let resultadosGlobales = []; // para mantener los productos filtrados actuales
+
+function buscarProductos() {
+  const texto = document.getElementById('busqueda').value.trim().toLowerCase();
+  if (!texto) return;
+
+  const resultados = [];
+
+  for (const tienda of datosApp.tiendas) {
+    for (const producto of tienda.productos) {
+      const nombreProd = producto.nombre?.toLowerCase() || '';
+      const marcaProd = producto.marca?.toLowerCase() || '';
+      const regionesTienda = tienda.regiones.map(r => r.toLowerCase());
+      const regionesPref = (producto.regiones_preferencia || []).map(r => r.toLowerCase());
+
+      const coincide =
+        nombreProd.includes(texto) ||
+        marcaProd.includes(texto) ||
+        regionesTienda.some(r => r.includes(texto)) ||
+        regionesPref.some(r => r.includes(texto));
+
+      if (coincide) {
+        resultados.push({
+          ...producto,
+          tiendaNombre: tienda.nombre,
+          tiendaId: tienda.id
+        });
+      }
+    }
+  }
+
+  //const totalResultados = resultados.length;
+  document.getElementById('cantidadResultados').innerHTML = resultados.length;
+
+  if(resultados.length > 0){
+    document.getElementById('wrapperResultadoBusqueda').classList.remove('d-none');
+  };
+
+  resultadosGlobales = resultados; // guardo para paginar
+  mostrarPagina(1); // muestro primera página
+}
+
+function mostrarPagina(numeroPagina) {
+  const inicio = (numeroPagina - 1) * resultados_por_pagina;
+  const fin = inicio + resultados_por_pagina;
+  const productosPagina = resultadosGlobales.slice(inicio, fin);
+
+  mostrarResultados(productosPagina);
+  mostrarPaginacion(resultadosGlobales.length, numeroPagina);
+}
+
+function mostrarResultados(productos) {
+  const contenedor = document.getElementById('resultados-busqueda');
+  contenedor.innerHTML = '';
+
+  if (productos.length === 0) {
+    contenedor.innerHTML = '<p>No se encontraron productos.</p>';
+    return;
+  }
+
+  productos.forEach(prod => {
+    const col = document.createElement('div');
+    col.className = 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3';
+
+    const regiones = (prod.regiones_preferencia || []).join(', ') || 'Sin región';
+
+    col.innerHTML = `
+      <div class="card-producto border p-2 rounded-1 h-100 d-flex flex-column">
+        <div class="img-wrapper mb-3">
+          <img src="${prod.imagen}" class="d-block w-100" alt="${prod.nombre}">
+        </div>
+        <p class="h6 text-break">${prod.nombre}</p>
+        <div class="detalles-venta mt-auto">
+          <a class="nombre-tienda" href="#">${prod.tiendaNombre}</a>  
+          <p class="region">${regiones}</p>            
+        </div>
+        <div class="footer d-flex align-items-center justify-content-between w-100 mt-2">
+          <p class="d-flex mb-0 price"><span class="d-inline-block">$</span> ${Math.round(prod.precio)}</p>
+          <div class="agregar" data-id="${prod.id}">
+            <button class="btn btn-sm btn-primary" data-id="${prod.id}">Agregar</button>
+          </div>
+          <div class="cantidad-group d-none align-items-center gap-2" data-id="${prod.id}">
+            <button class="btn btn-sm btn-outline-secondary btn-menos" data-id="${prod.id}">−</button>
+            <span class="cantidad">1</span>
+            <button class="btn btn-sm btn-outline-secondary btn-mas" data-id="${prod.id}">+</button>
+          </div>
+        </div>  
+      </div>
+    `;
+    contenedor.appendChild(col);
+  });
+}
+
+function mostrarPaginacion(totalResultados, paginaActual) {
+  const paginacion = document.getElementById('paginacion-resultados');
+  paginacion.innerHTML = '';
+
+  const totalPaginas = Math.ceil(totalResultados / resultados_por_pagina);
+  if (totalPaginas <= 1) return;
+
+  const ul = document.createElement('ul');
+  ul.className = 'pagination justify-content-center';
+
+  // Botón "Anterior"
+  const liAnterior = document.createElement('li');
+  liAnterior.className = `page-item ${paginaActual === 1 ? 'disabled' : ''}`;
+  liAnterior.innerHTML = `<a class="page-link" href="#"><i class="bi bi-arrow-left-short"></i></a>`;
+  liAnterior.addEventListener('click', e => {
+    e.preventDefault();
+    if (paginaActual > 1) mostrarPagina(paginaActual - 1);
+  });
+  ul.appendChild(liAnterior);
+
+  // Botones numéricos
+  for (let i = 1; i <= totalPaginas; i++) {
+    const li = document.createElement('li');
+    li.className = `page-item ${i === paginaActual ? 'active' : ''}`;
+    li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+    li.addEventListener('click', e => {
+      e.preventDefault();
+      mostrarPagina(i);
+    });
+    ul.appendChild(li);
+  }
+
+  // Botón "Siguiente"
+  const liSiguiente = document.createElement('li');
+  liSiguiente.className = `page-item ${paginaActual === totalPaginas ? 'disabled' : ''}`;
+  liSiguiente.innerHTML = `<a class="page-link" href="#"><i class="bi bi-arrow-right-short"></i></a>`;
+  liSiguiente.addEventListener('click', e => {
+    e.preventDefault();
+    if (paginaActual < totalPaginas) mostrarPagina(paginaActual + 1);
+  });
+  ul.appendChild(liSiguiente);
+
+  paginacion.appendChild(ul);
+}
+
+
+
+
+// Borrar búsqueda
+document.getElementById('btn-limpiar').addEventListener('click', function () {
+  document.getElementById('busqueda').value = '';
+  document.getElementById('resultados-busqueda').innerHTML = '';
+  document.getElementById('paginacion-resultados').innerHTML = ''; // limpia la paginación
+  document.getElementById('wrapperResultadoBusqueda').classList.add('d-none');
+});
