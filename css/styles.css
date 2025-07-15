@@ -392,33 +392,6 @@ a:hover {
   background-size: 100%;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
-  width: 32px;
-  height: 32px;
-  background-color: #13224D;
-  border-radius: 1000px;
-  top: 40%;
-  opacity: 1;
-}
-.carousel-control-next:hover,
-.carousel-control-prev:hover {
-  background-color: rgb(24.046875, 43.03125, 97.453125);
-}
-.carousel-control-next span,
-.carousel-control-prev span {
-  width: 16px;
-  height: 16px;
-}
-
-.carousel-control-next {
-  right: -64px;
-}
-
-.carousel-control-prev {
-  left: -64px;
-}
-
 .btn-carrito-flotante {
   position: fixed !important;
   bottom: 20px;

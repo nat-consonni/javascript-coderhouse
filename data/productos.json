@@ -23,7 +23,7 @@
         "Perú",
         "República Dominicana",
         "Venezuela",
-        "Latinoamericana",
+        "América del Sur",
         "Centroamérica",
         "Caribe"
       ],
@@ -456,7 +456,10 @@
       "tiempo_preparacion": 20,
       "regiones": [
         "Argentina",
-        "Chile"     
+        "Brasil",
+        "Chile",
+        "Paraguay",
+        "América del Sur"
       ],
       "productos": [
         {
@@ -886,22 +889,15 @@
       "nombre": "Delicias Caribeñas",
       "tiempo_preparacion": 5,
       "regiones": [
-        "Bolivia",
-        "Brasil",
-        "Colombia",
+        "Centroamérica",
         "Costa Rica",
-        "Cuba",
-        "Ecuador",
         "El Salvador",
         "Guatemala",
         "Honduras",
-        "México",
         "Nicaragua",
         "Panamá",
-        "Paraguay",
-        "Perú",        
+        "Colombia",        
         "Venezuela",
-        "Centroamérica",
         "Caribe"
       ],
       "productos": [
@@ -1335,11 +1331,22 @@
       "nombre": "Asia Gourmet",
       "tiempo_preparacion": 9,
       "regiones": [
-        "Tailandia",
+        "Asia",
         "Corea del Norte",
         "Corea",
         "Corea del Sur",
-        "Japón"
+        "Japón",
+        "China",
+        "Mongolia",
+        "Taiwan",
+        "India",
+        "Maldivas",
+        "Nepal", 
+        "Sri Lanka",
+        "Filipinas",
+        "Indonesia",
+        "Tailandia",
+        "Vietnam"
       ],
       "productos": [
         {
@@ -1767,16 +1774,17 @@
       ]
     },
     {
-      "id": "mercado-oriental",
-      "nombre": "Mercado Oriental",
+      "id": "raices-de-africa",
+      "nombre": "Raíces de África",
       "tiempo_preparacion": 13,
       "regiones": [
-        "Asia",
-        "Sudeste asíatico",
-        "Indonesia",
-        "Tailandia",
-        "Vietnam",
-        "Filipinas"
+        "Egipto",
+        "Kenia",
+        "Nigeria",
+        "Sudáfrica",
+        "Ghana",
+        "Senegal",
+        "Africa" 
       ],
       "productos": [
         {
@@ -2637,7 +2645,7 @@
       "tiempo_preparacion": 16,
       "regiones": [
         "Estados Unidos",
-        "Norte América",
+        "América del Norte",
         "Canada"
         
       ],
@@ -3068,7 +3076,7 @@
       "tiempo_preparacion": 20,
       "regiones": [
         "Estados Unidos",
-        "Norte América"
+        "América del Norte"
       ],
       "productos": [
         {
@@ -3504,7 +3512,9 @@
       "regiones": [
         "España",
         "Europa",
-        "Península Ibérica"
+        "Portugal",
+        "Francia",
+        "Alemania"
       ],
       "productos": [
         {

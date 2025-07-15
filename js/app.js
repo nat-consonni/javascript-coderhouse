@@ -7,7 +7,6 @@ fetch('./data/productos.json')
 .then(res => res.json())
 .then(data => {
   datosApp = data; // guardar globalmente
-  console.log('Datos recibidos:', data); // BORRAR LUEGO
   mostrarDestacados(); // llamar destacados
 
   // Carrito guardado
@@ -112,8 +111,6 @@ const tabFacturacionTab = document.getElementById("facturacion-tab");
 // Agregar producto al carrito
 
 function actualizarCarritoUI() {
-  
-  console.log('Carrito:', carrito); // BORRAR LUEGO
 
   contenedorCarrito.innerHTML = ''; // limpiar antes -- o sea que cada vez que agrega algo borra, chequear de optimizar
 
@@ -610,3 +607,4 @@ document.getElementById('btn-limpiar').addEventListener('click', function () {
   document.getElementById('paginacion-resultados').innerHTML = ''; // limpia la paginación
   document.getElementById('wrapperResultadoBusqueda').classList.add('d-none');
 });
+
